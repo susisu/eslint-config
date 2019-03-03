@@ -1,0 +1,22 @@
+{
+  "name": "@susisu/eslint-config",
+  "version": "0.0.0",
+  "description": "My ESLint config",
+  "main": "index.js",
+  "repository": "https://github.com/susisu/eslint-config.git",
+  "author": "Susisu <susisu2413@yahoo.co.jp>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "lint": "eslint *.js lib",
+    "lint:fix": "eslint --fix *.js lib"
+  },
+  "peerDependencies": {
+    "eslint": "^5.15.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.0"
+  }
+}
