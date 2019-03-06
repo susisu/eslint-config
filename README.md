@@ -1,4 +1,6 @@
 # @susisu/eslint-config
+[![Build Status](https://travis-ci.com/susisu/eslint-config.svg?branch=master)](https://travis-ci.com/susisu/eslint-config)
+
 ## Installation
 ``` shell
 # npm
