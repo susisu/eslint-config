@@ -9,6 +9,9 @@
   "engines": {
     "node": ">=6.0.0"
   },
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "lint": "eslint *.js lib",
     "lint:fix": "eslint --fix *.js lib"
