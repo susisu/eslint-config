@@ -14,9 +14,9 @@
     "lint:fix": "eslint --fix *.js lib"
   },
   "peerDependencies": {
-    "eslint": "^5.15.0"
+    "eslint": "^5.15.1"
   },
   "devDependencies": {
-    "eslint": "^5.15.0"
+    "eslint": "^5.15.1"
   }
 }
