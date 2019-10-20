@@ -2,7 +2,7 @@
   "name": "@susisu/eslint-config",
   "version": "0.0.6",
   "description": "My ESLint config",
-  "main": "index.js",
+  "main": "presets/es.js",
   "repository": "https://github.com/susisu/eslint-config.git",
   "author": "Susisu <susisu2413@yahoo.co.jp>",
   "license": "MIT",
@@ -10,11 +10,12 @@
     "node": ">=8.0.0"
   },
   "files": [
-    "lib"
+    "lib",
+    "presets"
   ],
   "scripts": {
-    "lint": "eslint *.js lib",
-    "lint:fix": "eslint --fix *.js lib"
+    "lint": "eslint *.js lib presets",
+    "lint:fix": "eslint --fix *.js lib presets"
   },
   "peerDependencies": {
     "eslint": "^6.5.0"
