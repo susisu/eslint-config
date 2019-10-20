@@ -2,7 +2,7 @@
   "name": "@susisu/eslint-config",
   "version": "0.0.6",
   "description": "My ESLint config",
-  "main": "presets/es.js",
+  "main": "preset/es.js",
   "repository": "https://github.com/susisu/eslint-config.git",
   "author": "Susisu <susisu2413@yahoo.co.jp>",
   "license": "MIT",
@@ -11,11 +11,11 @@
   },
   "files": [
     "lib",
-    "presets"
+    "preset"
   ],
   "scripts": {
-    "lint": "eslint *.js lib presets",
-    "lint:fix": "eslint --fix *.js lib presets",
+    "lint": "eslint *.js lib preset",
+    "lint:fix": "eslint --fix *.js lib preset",
     "test": "run-s test:*",
     "test:es": "./test/es/run.sh",
     "test:ts": "./test/ts/run.sh",

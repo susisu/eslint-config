@@ -1,7 +1,7 @@
 "use strict";
 
 module.exports = {
-  "extends"      : ["../../presets/ts"],
+  "extends"      : ["../../preset/ts"],
   "parserOptions": {
     "ecmaVersion": 2018,
     "sourceType" : "module",

@@ -1,7 +1,7 @@
 "use strict";
 
 module.exports = {
-  "extends"      : ["./presets/es"],
+  "extends"      : ["./preset/es"],
   "parserOptions": {
     "ecmaVersion": 2018,
   },
