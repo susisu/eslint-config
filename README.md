@@ -3,7 +3,6 @@
 
 ## Requirements
 - eslint >= 6.5.0
-- typescript-eslint >= 2.4.0 (optional)
 
 ## Installation
 ``` shell
@@ -12,16 +11,6 @@ npm i -D eslint @susisu/eslint-config
 # yarn
 yarn add -D eslint @susisu/eslint-config
 ```
-
-If you want to use presets for TypeScript, install typescript-eslint as well.
-
-``` shell
-# npm
-npm i -D @typescript-eslint/parser @typescript-eslint/eslint-plugin
-# yarn
-yarn add -D @typescript-eslint/parser @typescript-eslint/eslint-plugin
-```
-
 
 ## Usage
 Extend a preset in your .eslintrc file.
