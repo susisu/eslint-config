@@ -21,12 +21,14 @@
     "test:ts": "./test/ts/run.sh",
     "test:ts-types": "./test/ts-types/run.sh"
   },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.4.0",
+    "@typescript-eslint/parser": "^2.4.0"
+  },
   "peerDependencies": {
     "eslint": "^6.5.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.4.0",
-    "@typescript-eslint/parser": "^2.4.0",
     "eslint": "^6.5.0",
     "npm-run-all": "^4.1.5",
     "typescript": "^3.6.0"
