@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.com/susisu/eslint-config.svg?branch=master)](https://travis-ci.com/susisu/eslint-config)
 
 ## Requirements
-- eslint >= 6.5.0
+- eslint >= 6.6.0
 
 ## Installation
 ``` shell
