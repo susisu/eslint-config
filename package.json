@@ -22,8 +22,8 @@
     "test:ts-types": "./test/ts-types/run.sh"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.6.1",
-    "@typescript-eslint/parser": "^2.6.1"
+    "@typescript-eslint/eslint-plugin": "^2.7.0",
+    "@typescript-eslint/parser": "^2.7.0"
   },
   "peerDependencies": {
     "eslint": "^6.6.0"
