@@ -19,7 +19,8 @@
     "test": "run-s test:*",
     "test:es": "./test/es/run.sh",
     "test:ts": "./test/ts/run.sh",
-    "test:ts-types": "./test/ts-types/run.sh"
+    "test:ts-types": "./test/ts-types/run.sh",
+    "prepublishOnly": "run-s lint test"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.9.0",
