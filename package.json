@@ -1,6 +1,6 @@
 {
   "name": "@susisu/eslint-config",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "My ESLint config",
   "main": "preset/es.js",
   "repository": "https://github.com/susisu/eslint-config.git",
