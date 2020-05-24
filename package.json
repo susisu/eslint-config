@@ -7,7 +7,7 @@
   "author": "Susisu <susisu2413@yahoo.co.jp>",
   "license": "MIT",
   "engines": {
-    "node": ">=8.0.0"
+    "node": ">=10.0.0"
   },
   "files": [
     "lib",
@@ -27,7 +27,7 @@
     "@typescript-eslint/parser": "^3.0.0"
   },
   "peerDependencies": {
-    "eslint": "^7.0.0"
+    "eslint": "^7.1.0"
   },
   "devDependencies": {
     "eslint": "^7.1.0",
