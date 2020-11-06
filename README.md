@@ -1,5 +1,5 @@
 # @susisu/eslint-config
-[![Build Status](https://travis-ci.com/susisu/eslint-config.svg?branch=master)](https://travis-ci.com/susisu/eslint-config)
+[![CI](https://github.com/susisu/eslint-config/workflows/CI/badge.svg)](https://github.com/susisu/eslint-config/actions?query=workflow%3ACI)
 
 ## Requirements
 - eslint >= 7.4.0 < 8
