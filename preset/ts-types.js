@@ -1,6 +1,6 @@
 "use strict";
 
 module.exports = {
-  "parser" : "@typescript-eslint/parser",
+  "parser": "@typescript-eslint/parser",
   "extends": ["../lib/base", "../lib/ts", "../lib/types"],
 };
