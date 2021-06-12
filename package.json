@@ -15,7 +15,7 @@
   ],
   "scripts": {
     "lint": "eslint *.js lib preset",
-    "lint:fix": "eslint --fix *.js lib preset",
+    "lint-fix": "eslint --fix *.js lib preset",
     "test": "run-s test:*",
     "test:es": "./test/es/run.sh",
     "test:ts": "./test/ts/run.sh",
