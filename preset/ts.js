@@ -56,7 +56,7 @@ const suggestions = {
   }],
   "@typescript-eslint/no-unnecessary-qualifier": OFF,
   "@typescript-eslint/no-unnecessary-type-arguments": OFF,
-  "@typescript-eslint/no-unnecessary-type-assertion": WRN,
+  "@typescript-eslint/no-unnecessary-type-assertion": ERR,
   "@typescript-eslint/non-nullable-type-assertion-style": OFF,
   "@typescript-eslint/prefer-includes": WRN,
   "@typescript-eslint/prefer-nullish-coalescing": OFF,
@@ -67,7 +67,7 @@ const suggestions = {
   "@typescript-eslint/prefer-return-this-type": OFF,
   "@typescript-eslint/prefer-string-starts-ends-with": ERR,
   "@typescript-eslint/promise-function-async": OFF,
-  "@typescript-eslint/require-await": WRN,
+  "@typescript-eslint/require-await": ERR,
   "@typescript-eslint/strict-boolean-expressions": OFF,
   "@typescript-eslint/switch-exhaustiveness-check": WRN,
 };

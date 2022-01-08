@@ -41,7 +41,7 @@ const overrides = {
 };
 
 const possibleProblems = {
-  "@typescript-eslint/ban-ts-comment": [WRN, {
+  "@typescript-eslint/ban-ts-comment": [ERR, {
     "ts-expect-error": true,
   }],
   "@typescript-eslint/class-literal-property-style": OFF,
@@ -72,7 +72,7 @@ const possibleProblems = {
   "@typescript-eslint/no-non-null-asserted-optional-chain": ERR,
   "@typescript-eslint/no-non-null-assertion": WRN,
   "@typescript-eslint/no-parameter-properties": OFF,
-  "@typescript-eslint/no-require-imports": WRN,
+  "@typescript-eslint/no-require-imports": ERR,
   "@typescript-eslint/no-unused-vars": [ERR, {
     "ignoreRestSiblings": true,
     "argsIgnorePattern": "^_",
@@ -84,7 +84,7 @@ const possibleProblems = {
   }],
   "@typescript-eslint/no-useless-constructor": ERR,
   "@typescript-eslint/no-var-requires": OFF,
-  "@typescript-eslint/prefer-ts-expect-error": WRN,
+  "@typescript-eslint/prefer-ts-expect-error": ERR,
 };
 
 const suggestions = {
@@ -202,7 +202,7 @@ const suggestions = {
   "@typescript-eslint/no-unused-expressions": [ERR, {
     "enforceForJSX": true,
   }],
-  "@typescript-eslint/prefer-as-const": WRN,
+  "@typescript-eslint/prefer-as-const": ERR,
   "@typescript-eslint/prefer-enum-initializers": OFF,
   "@typescript-eslint/prefer-for-of": OFF,
   "@typescript-eslint/prefer-function-type": OFF,
