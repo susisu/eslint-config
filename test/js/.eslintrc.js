@@ -1,7 +1,7 @@
 "use strict";
 
 module.exports = {
-  "extends": ["../../preset/es"],
+  "extends": ["../../preset/js"],
   "parserOptions": {
     "ecmaVersion": 2021,
     "sourceType": "module",

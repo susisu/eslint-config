@@ -2,5 +2,5 @@
 
 module.exports = {
   "parser": "@typescript-eslint/parser",
-  "extends": ["../lib/base", "../lib/ts"],
+  "extends": ["../lib/js", "../lib/ts"],
 };

@@ -15,7 +15,7 @@ yarn add -D eslint @susisu/eslint-config
 ## Usage
 Extend a preset in your .eslintrc file.
 
-- `@susisu/eslint-config/preset/es`: ECMAScript
+- `@susisu/eslint-config/preset/js`: JavaScript
 - `@susisu/eslint-config/preset/ts`: TypeScript
 - `@susisu/eslint-config/preset/ts-types`: TypeScript with type information
 
@@ -23,7 +23,7 @@ Example:
 
 ``` json
 {
-  "extends": ["@susisu/eslint-config/preset/es"],
+  "extends": ["@susisu/eslint-config/preset/js"],
   "parserOptions": {
     "ecmaVersion": 2021
   },
