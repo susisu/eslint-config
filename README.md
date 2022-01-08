@@ -17,7 +17,7 @@ Extend a preset in your .eslintrc file.
 
 - `@susisu/eslint-config/preset/js`: JavaScript
 - `@susisu/eslint-config/preset/ts`: TypeScript
-- `@susisu/eslint-config/preset/ts-types`: TypeScript with type information
+- `@susisu/eslint-config/preset/ts-without-types`: TypeScript without type information
 
 Example:
 
