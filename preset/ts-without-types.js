@@ -5,7 +5,7 @@ const { removeOffRules } = require("../lib/utils");
 
 const overrides = {
   "brace-style": OFF,
-  // Overridden by @typescript-eslint/naming-convention
+  // overridden by @typescript-eslint/naming-convention
   "camelcase": OFF,
   "comma-dangle": OFF,
   "comma-spacing": OFF,
@@ -113,7 +113,7 @@ const suggestions = {
     "objectLiteralTypeAssertions": "allow-as-parameter",
   }],
   "@typescript-eslint/consistent-type-definitions": OFF,
-  // To be investigated
+  // to be investigated
   "@typescript-eslint/consistent-type-imports": OFF,
   "@typescript-eslint/default-param-last": ERR,
   "@typescript-eslint/init-declarations": OFF,
@@ -140,7 +140,7 @@ const suggestions = {
     },
   }],
   "@typescript-eslint/member-ordering": OFF,
-  // Disabled to allow @typescript-eslint/unbound-method rule to work
+  // disabled to allow @typescript-eslint/unbound-method rule to work
   "@typescript-eslint/method-signature-style": OFF,
 
   "@typescript-eslint/naming-convention": [WRN, {

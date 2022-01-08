@@ -60,7 +60,7 @@ const suggestions = {
   "@typescript-eslint/non-nullable-type-assertion-style": OFF,
   "@typescript-eslint/prefer-includes": WRN,
   "@typescript-eslint/prefer-nullish-coalescing": OFF,
-  // To be investigated
+  // to be investigated
   "@typescript-eslint/prefer-readonly": OFF,
   "@typescript-eslint/prefer-readonly-parameter-types": OFF,
   "@typescript-eslint/prefer-regexp-exec": WRN,

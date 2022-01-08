@@ -228,7 +228,7 @@ const suggestions = {
   "prefer-exponentiation-operator": ERR,
   "prefer-named-capture-group": OFF,
   "prefer-numeric-literals": ERR,
-  // Disabled because it's too early to require ES2022
+  // disabled because it's too early to require ES2022
   "prefer-object-has-own": OFF,
   "prefer-object-spread": ERR,
   "prefer-promise-reject-errors": [ERR, {
