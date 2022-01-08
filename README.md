@@ -34,6 +34,10 @@ Example:
 }
 ```
 
+## Error levels
+- `error`: problems that should be fixed in most of the projects and contexts
+- `warn`: problems that might be fixed depending on the project or context, or just notifications (like highlighting TODO comments)
+
 ## License
 [MIT License](http://opensource.org/licenses/mit-license.php)
 
