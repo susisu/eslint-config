@@ -1,13 +1,26 @@
 "use strict";
 
 module.exports = {
-  "extends": ["../../preset/ts-test"],
-  "parserOptions": {
-    "ecmaVersion": 2021,
-    "sourceType": "module",
-    "project": "./tsconfig.json"
+  parserOptions: {
+    ecmaVersion: 2021,
+    sourceType: "script",
   },
-  "env": {
-    "es6": true,
+  env: {
+    es6: true,
+    node: true,
   },
+  overrides: [
+    {
+      files: ["./src/**/*.ts"],
+      extends: ["../../preset/ts-test"],
+      parserOptions: {
+        ecmaVersion: 2021,
+        sourceType: "module",
+        project: "./tsconfig.json",
+      },
+      env: {
+        es6: true,
+      },
+    },
+  ],
 };

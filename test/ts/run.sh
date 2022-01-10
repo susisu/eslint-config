@@ -2,4 +2,4 @@
 
 cd $(dirname "$0")
 set -eux
-eslint --ext .ts src
+eslint --report-unused-disable-directives src
