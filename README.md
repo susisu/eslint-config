@@ -15,9 +15,10 @@ yarn add -D eslint @susisu/eslint-config
 ## Usage
 Extend a preset in your .eslintrc file.
 
-- `@susisu/eslint-config/preset/js`: JavaScript
-- `@susisu/eslint-config/preset/ts`: TypeScript
-- `@susisu/eslint-config/preset/ts-without-types`: TypeScript without type information
+- `@susisu/eslint-config/preset/js`: for JavaScript files
+- `@susisu/eslint-config/preset/ts`: for TypeScript files
+- `@susisu/eslint-config/preset/ts-test`: for TypeScript test files
+- `@susisu/eslint-config/preset/ts-without-types`: for TypeScript files (without using type information)
 
 Example:
 
