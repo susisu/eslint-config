@@ -18,7 +18,7 @@ const possibleProblems = {
     "checkLoops": false,
   }],
   "no-constructor-return": ERR,
-  "no-control-regex": WRN,
+  "no-control-regex": OFF,
   "no-debugger": ERR,
   "no-dupe-args": ERR,
   "no-dupe-class-members": ERR,
