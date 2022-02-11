@@ -19,7 +19,6 @@
     "test": "run-s test:*",
     "test:js": "./test/js/run.sh",
     "test:ts": "./test/ts/run.sh",
-    "test:ts-test": "./test/ts-test/run.sh",
     "test:ts-without-types": "./test/ts-without-types/run.sh",
     "prepublishOnly": "run-s lint test"
   },
