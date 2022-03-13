@@ -20,8 +20,13 @@ const possibleProblems = {
   }],
   "@typescript-eslint/no-for-in-array": WRN,
   "@typescript-eslint/no-misused-promises": [WRN, {
-    // to be enabled later
-    checksVoidReturn: false,
+    checksVoidReturn: {
+      // to be enabled later
+      attributes: false,
+      properties: false,
+      returns: false,
+      variables: false,
+    },
   }],
   "@typescript-eslint/no-throw-literal": [ERR, {
     "allowThrowingAny": false,
