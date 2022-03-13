@@ -164,6 +164,15 @@ const suggestions = {
     "leadingUnderscore": "allow",
     "trailingUnderscore": "allow",
   }, {
+    "selector": [
+      "objectLiteralProperty",
+      "typeProperty",
+      "objectLiteralMethod",
+      "typeMethod",
+    ],
+    "modifiers": ["requiresQuotes"],
+    "format": null,
+  }, {
     "selector": "typeLike",
     "format": ["PascalCase"],
     "leadingUnderscore": "allow",
