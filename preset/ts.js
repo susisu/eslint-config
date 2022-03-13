@@ -47,6 +47,7 @@ const suggestions = {
   "@typescript-eslint/no-base-to-string": WRN,
   "@typescript-eslint/no-implied-eval": ERR,
   "@typescript-eslint/no-meaningless-void-operator": ERR,
+  "@typescript-eslint/no-redundant-type-constituents": ERR,
   "@typescript-eslint/no-unnecessary-boolean-literal-compare": [ERR, {
     "allowComparingNullableBooleansToTrue": true,
     "allowComparingNullableBooleansToFalse": true,

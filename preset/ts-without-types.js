@@ -36,6 +36,7 @@ const overrides = {
   "padding-line-between-statements": OFF,
   "quotes": OFF,
   "semi": OFF,
+  "space-before-blocks": OFF,
   "space-before-function-paren": OFF,
   "space-infix-ops": OFF,
 };
@@ -142,7 +143,6 @@ const suggestions = {
   "@typescript-eslint/member-ordering": OFF,
   // disabled to allow @typescript-eslint/unbound-method rule to work
   "@typescript-eslint/method-signature-style": OFF,
-
   "@typescript-eslint/naming-convention": [WRN, {
     "selector": "variableLike",
     "format": ["camelCase", "PascalCase"],
@@ -202,6 +202,7 @@ const suggestions = {
   "@typescript-eslint/no-unused-expressions": [ERR, {
     "enforceForJSX": true,
   }],
+  "@typescript-eslint/no-useless-empty-export": WRN,
   "@typescript-eslint/prefer-as-const": ERR,
   "@typescript-eslint/prefer-enum-initializers": OFF,
   "@typescript-eslint/prefer-for-of": OFF,
@@ -257,6 +258,7 @@ const layoutAndFormatting = {
   "@typescript-eslint/padding-line-between-statements": OFF,
   "@typescript-eslint/quotes": [ERR, "double"],
   "@typescript-eslint/semi": [ERR, "always"],
+  "@typescript-eslint/space-before-blocks": [ERR, "always"],
   "@typescript-eslint/space-before-function-paren": [ERR, {
     "anonymous": "always",
     "named": "never",
