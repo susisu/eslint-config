@@ -14,6 +14,7 @@ const possibleProblems = {
   "no-compare-neg-zero": ERR,
   "no-cond-assign": [WRN, "always"],
   "no-const-assign": ERR,
+  "no-constant-binary-expression": ERR,
   "no-constant-condition": [WRN, {
     "checkLoops": false,
   }],
@@ -64,8 +65,10 @@ const possibleProblems = {
   "no-unused-private-class-members": ERR,
   "no-unused-vars": [ERR, {
     "ignoreRestSiblings": true,
-    "varsIgnorePattern": "^_",
+    "caughtErrors": "all",
     "argsIgnorePattern": "^_",
+    "destructuredArrayIgnorePattern": "^_",
+    "caughtErrorsIgnorePattern": "^_",
   }],
   "no-use-before-define": [WRN, {
     "functions": false,

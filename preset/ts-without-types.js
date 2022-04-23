@@ -76,8 +76,10 @@ const possibleProblems = {
   "@typescript-eslint/no-require-imports": ERR,
   "@typescript-eslint/no-unused-vars": [ERR, {
     "ignoreRestSiblings": true,
-    "argsIgnorePattern": "^_",
     "caughtErrors": "all",
+    "argsIgnorePattern": "^_",
+    "destructuredArrayIgnorePattern": "^_",
+    "caughtErrorsIgnorePattern": "^_",
   }],
   "@typescript-eslint/no-use-before-define": [WRN, {
     "functions": false,
