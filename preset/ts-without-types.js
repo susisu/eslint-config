@@ -292,10 +292,14 @@ const layoutAndFormatting = {
   }],
 };
 
+const safeTypeScript = {
+  "@susisu/safe-typescript/no-object-assign": WRN,
+};
+
 module.exports = {
   extends: ["./js"],
   parser: "@typescript-eslint/parser",
-  plugins: ["@typescript-eslint"],
+  plugins: ["@typescript-eslint", "@susisu/safe-typescript"],
   rules: {
     ...overrides,
     ...removeOffRules(
@@ -303,6 +307,7 @@ module.exports = {
         ...possibleProblems,
         ...suggestions,
         ...layoutAndFormatting,
+        ...safeTypeScript,
       }
     ),
   },

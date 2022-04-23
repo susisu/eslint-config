@@ -78,6 +78,12 @@ const suggestions = {
 
 const layoutAndFormatting = {};
 
+const safeTypeScript = {
+  "@susisu/safe-typescript/no-unsafe-object-enum-method": WRN,
+  "@susisu/safe-typescript/no-unsafe-object-property-check": WRN,
+  "@susisu/safe-typescript/no-unsafe-object-property-overwrite": WRN,
+};
+
 module.exports = {
   extends: ["./ts-without-types"],
   rules: {
@@ -87,6 +93,7 @@ module.exports = {
         ...possibleProblems,
         ...suggestions,
         ...layoutAndFormatting,
+        ...safeTypeScript,
       }
     ),
   },
