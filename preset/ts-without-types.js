@@ -62,6 +62,7 @@ const possibleProblems = {
   }],
   "@typescript-eslint/no-confusing-non-null-assertion": OFF,
   "@typescript-eslint/no-dupe-class-members": ERR,
+  "@typescript-eslint/no-duplicate-enum-values": ERR,
   "@typescript-eslint/no-duplicate-imports": [ERR, {
     "includeExports": false,
   }],
