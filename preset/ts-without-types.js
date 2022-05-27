@@ -72,7 +72,6 @@ const possibleProblems = {
   "@typescript-eslint/no-non-null-asserted-nullish-coalescing": ERR,
   "@typescript-eslint/no-non-null-asserted-optional-chain": ERR,
   "@typescript-eslint/no-non-null-assertion": WRN,
-  "@typescript-eslint/no-parameter-properties": OFF,
   "@typescript-eslint/no-require-imports": ERR,
   "@typescript-eslint/no-unused-vars": [ERR, {
     "ignoreRestSiblings": true,
@@ -87,6 +86,7 @@ const possibleProblems = {
   }],
   "@typescript-eslint/no-useless-constructor": ERR,
   "@typescript-eslint/no-var-requires": OFF,
+  "@typescript-eslint/parameter-properties": OFF,
   "@typescript-eslint/prefer-ts-expect-error": ERR,
 };
 
