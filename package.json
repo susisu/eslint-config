@@ -7,7 +7,7 @@
   "author": "Susisu <susisu2413@yahoo.co.jp>",
   "license": "MIT",
   "engines": {
-    "node": ">=12.0.0"
+    "node": ">=14.0.0"
   },
   "files": [
     "lib",
