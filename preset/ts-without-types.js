@@ -193,7 +193,6 @@ const suggestions = {
     "allowEmpty": true,
     "allowWithDecorator": true,
   }],
-  "@typescript-eslint/no-implicit-any-catch": WRN,
   "@typescript-eslint/no-inferrable-types": OFF,
   "@typescript-eslint/no-invalid-this": [WRN, {
     "capIsConstructor": false,
