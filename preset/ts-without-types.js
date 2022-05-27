@@ -17,7 +17,6 @@ const overrides = {
   "lines-between-class-members": OFF,
   "no-array-constructor": OFF,
   "no-dupe-class-members": OFF,
-  "no-duplicate-imports": OFF,
   "no-empty-function": OFF,
   "no-extra-parens": OFF,
   "no-extra-semi": OFF,
@@ -63,9 +62,6 @@ const possibleProblems = {
   "@typescript-eslint/no-confusing-non-null-assertion": OFF,
   "@typescript-eslint/no-dupe-class-members": ERR,
   "@typescript-eslint/no-duplicate-enum-values": ERR,
-  "@typescript-eslint/no-duplicate-imports": [ERR, {
-    "includeExports": false,
-  }],
   "@typescript-eslint/no-extra-non-null-assertion": ERR,
   "@typescript-eslint/no-invalid-void-type": OFF,
   "@typescript-eslint/no-loss-of-precision": ERR,

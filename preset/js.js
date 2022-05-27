@@ -26,9 +26,7 @@ const possibleProblems = {
   "no-dupe-else-if": ERR,
   "no-dupe-keys": ERR,
   "no-duplicate-case": ERR,
-  "no-duplicate-imports": [ERR, {
-    "includeExports": false,
-  }],
+  "no-duplicate-imports": OFF,
   "no-empty-character-class": ERR,
   "no-empty-pattern": ERR,
   "no-ex-assign": ERR,
