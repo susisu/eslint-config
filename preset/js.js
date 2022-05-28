@@ -26,6 +26,8 @@ const possibleProblems = {
   "no-dupe-else-if": ERR,
   "no-dupe-keys": ERR,
   "no-duplicate-case": ERR,
+  // disabled because no extension rule is provided by typescript-eslint
+  // instead, use import/no-duplicates for consistency
   "no-duplicate-imports": OFF,
   "no-empty-character-class": ERR,
   "no-empty-pattern": ERR,
