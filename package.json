@@ -6,9 +6,6 @@
   "repository": "https://github.com/susisu/eslint-config.git",
   "author": "Susisu <susisu2413@yahoo.co.jp>",
   "license": "MIT",
-  "engines": {
-    "node": ">=14.0.0"
-  },
   "files": [
     "lib",
     "preset"
