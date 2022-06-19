@@ -107,6 +107,7 @@ const suggestions = {
     "before": false,
     "after": true,
   }],
+  "@typescript-eslint/consistent-generic-constructors": OFF,
   "@typescript-eslint/consistent-indexed-object-style": OFF,
   "@typescript-eslint/consistent-type-assertions": [ERR, {
     "assertionStyle": "as",
