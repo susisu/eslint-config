@@ -291,6 +291,7 @@ const layoutAndFormatting = {
 
 const safeTypeScript = {
   "@susisu/safe-typescript/no-object-assign": WRN,
+  "@susisu/safe-typescript/no-type-assertion": WRN,
 };
 
 module.exports = {
