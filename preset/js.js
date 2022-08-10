@@ -72,6 +72,7 @@ const possibleProblems = {
   }],
   "no-use-before-define": [WRN, {
     "functions": false,
+    "allowNamedExports": true,
   }],
   "no-useless-backreference": ERR,
   "require-atomic-updates": WRN,

@@ -80,6 +80,7 @@ const possibleProblems = {
   "@typescript-eslint/no-use-before-define": [WRN, {
     "functions": false,
     "typedefs": false,
+    "allowNamedExports": true,
   }],
   "@typescript-eslint/no-useless-constructor": ERR,
   "@typescript-eslint/no-var-requires": OFF,
