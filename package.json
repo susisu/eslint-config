@@ -20,7 +20,7 @@
     "prepublishOnly": "run-s lint test"
   },
   "dependencies": {
-    "@susisu/eslint-plugin-safe-typescript": "^0.3.0",
+    "@susisu/eslint-plugin-safe-typescript": "^0.3.1",
     "@typescript-eslint/eslint-plugin": "^5.33.0",
     "@typescript-eslint/parser": "^5.33.0"
   },

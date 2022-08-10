@@ -57,12 +57,12 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@susisu/eslint-plugin-safe-typescript@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@susisu/eslint-plugin-safe-typescript/-/eslint-plugin-safe-typescript-0.3.0.tgz#d963cfb23a1b2b2be08caf6304a8bcb739b7461a"
-  integrity sha512-EPSUJjvg5w2RGoZU9a2k0AZovgd7K1P03a3E9ld19U8sNVwTBJPAI0QgVbvHFYBKfBsGCBDjbglAW7vFY1mKTg==
+"@susisu/eslint-plugin-safe-typescript@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@susisu/eslint-plugin-safe-typescript/-/eslint-plugin-safe-typescript-0.3.1.tgz#fe2aaee3a2b457a332c05b4417848dc33001ad39"
+  integrity sha512-G/jnQDo7MRQ7YAJtMA0a4LIpb+VNxPkp4fXxkOTd1DQsFI3NVcHM05U8Rkb2VOT8FdwtB7JoKhNSnnqUKVlYvQ==
   dependencies:
-    "@typescript-eslint/utils" "^5.30.6"
+    "@typescript-eslint/utils" "^5.33.0"
 
 "@types/json-schema@^7.0.9":
   version "7.0.11"
@@ -129,7 +129,7 @@
     semver "^7.3.7"
     tsutils "^3.21.0"
 
-"@typescript-eslint/utils@5.33.0", "@typescript-eslint/utils@^5.30.6":
+"@typescript-eslint/utils@5.33.0", "@typescript-eslint/utils@^5.33.0":
   version "5.33.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/utils/-/utils-5.33.0.tgz#46797461ce3146e21c095d79518cc0f8ec574038"
   integrity sha512-JxOAnXt9oZjXLIiXb5ZIcZXiwVHCkqZgof0O8KPgz7C7y0HS42gi75PdPlqh1Tf109M0fyUw45Ao6JLo7S5AHw==
