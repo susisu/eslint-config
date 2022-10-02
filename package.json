@@ -20,16 +20,16 @@
     "prepublishOnly": "run-s lint test"
   },
   "dependencies": {
-    "@susisu/eslint-plugin-safe-typescript": "^0.3.1",
-    "@typescript-eslint/eslint-plugin": "^5.36.1",
-    "@typescript-eslint/parser": "^5.36.1"
+    "@susisu/eslint-plugin-safe-typescript": "^0.3.3",
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "^5.38.1"
   },
   "peerDependencies": {
     "eslint": "^8.17.0"
   },
   "devDependencies": {
-    "eslint": "^8.23.0",
+    "eslint": "^8.24.0",
     "npm-run-all": "^4.1.5",
-    "typescript": "~4.8.2"
+    "typescript": "~4.8.4"
   }
 }
