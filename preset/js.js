@@ -110,6 +110,7 @@ const suggestions = {
   "id-length": OFF,
   "id-match": OFF,
   "init-declarations": OFF,
+  "logical-assignment-operators": OFF,
   "max-classes-per-file": OFF,
   "max-depth": OFF,
   "max-lines": OFF,
