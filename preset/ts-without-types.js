@@ -70,6 +70,7 @@ const possibleProblems = {
   "@typescript-eslint/no-non-null-asserted-optional-chain": ERR,
   "@typescript-eslint/no-non-null-assertion": WRN,
   "@typescript-eslint/no-require-imports": ERR,
+  "@typescript-eslint/no-unsafe-declaration-merging": ERR,
   "@typescript-eslint/no-unused-vars": [ERR, {
     "ignoreRestSiblings": true,
     "caughtErrors": "all",
