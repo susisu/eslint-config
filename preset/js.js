@@ -41,7 +41,7 @@ const possibleProblems = {
   "no-loss-of-precision": ERR,
   "no-misleading-character-class": ERR,
   "no-new-native-nonconstructor": ERR,
-  // replaced by no-new-native-nonconstructo
+  // replaced by no-new-native-nonconstructor
   "no-new-symbol": OFF,
   "no-obj-calls": ERR,
   "no-promise-executor-return": ERR,
