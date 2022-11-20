@@ -2,7 +2,7 @@
 [![CI](https://github.com/susisu/eslint-config/workflows/CI/badge.svg)](https://github.com/susisu/eslint-config/actions?query=workflow%3ACI)
 
 ## Requirements
-- eslint >= 8.24.0 < 9
+- eslint >= 8.27.0 < 9
 
 ## Installation
 ``` shell
