@@ -40,7 +40,9 @@ const possibleProblems = {
   "no-irregular-whitespace": ERR,
   "no-loss-of-precision": ERR,
   "no-misleading-character-class": ERR,
-  "no-new-symbol": ERR,
+  "no-new-native-nonconstructor": ERR,
+  // replaced by no-new-native-nonconstructo
+  "no-new-symbol": OFF,
   "no-obj-calls": ERR,
   "no-promise-executor-return": ERR,
   "no-prototype-builtins": ERR,
@@ -135,6 +137,7 @@ const suggestions = {
   "no-else-return": OFF,
   "no-empty": ERR,
   "no-empty-function": OFF,
+  "no-empty-static-block": ERR,
   "no-eq-null": ERR,
   "no-eval": ERR,
   "no-extend-native": ERR,
