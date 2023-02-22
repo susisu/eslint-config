@@ -23,6 +23,7 @@ const possibleProblems = {
     "checksConditionals": true,
     "checksVoidReturn": true,
   }],
+  "@typescript-eslint/no-mixed-enums": WRN,
   "@typescript-eslint/no-throw-literal": [ERR, {
     "allowThrowingAny": false,
     "allowThrowingUnknown": false,

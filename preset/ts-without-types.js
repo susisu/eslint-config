@@ -4,6 +4,7 @@ const { OFF, WRN, ERR } = require("../lib/levels");
 const { removeOffRules } = require("../lib/utils");
 
 const overrides = {
+  "block-spacing": OFF,
   "brace-style": OFF,
   // overridden by @typescript-eslint/naming-convention
   "camelcase": OFF,
@@ -13,6 +14,7 @@ const overrides = {
   "func-call-spacing": OFF,
   "indent": OFF,
   "init-declarations": OFF,
+  "key-spacing": OFF,
   "keyword-spacing": OFF,
   "lines-between-class-members": OFF,
   "no-array-constructor": OFF,
@@ -63,6 +65,7 @@ const possibleProblems = {
   "@typescript-eslint/no-dupe-class-members": ERR,
   "@typescript-eslint/no-duplicate-enum-values": ERR,
   "@typescript-eslint/no-extra-non-null-assertion": ERR,
+  "@typescript-eslint/no-import-type-side-effects": ERR,
   "@typescript-eslint/no-invalid-void-type": OFF,
   "@typescript-eslint/no-loss-of-precision": ERR,
   "@typescript-eslint/no-misused-new": ERR,
@@ -242,6 +245,7 @@ const suggestions = {
 };
 
 const layoutAndFormatting = {
+  "@typescript-eslint/block-spacing": [ERR, "always"],
   "@typescript-eslint/brace-style": [ERR, "1tbs", {
     "allowSingleLine": true,
   }],
@@ -260,6 +264,10 @@ const layoutAndFormatting = {
     "SwitchCase": 1,
     "VariableDeclarator": "first",
     "ignoredNodes": ["ConditionalExpression"],
+  }],
+  "@typescript-eslint/key-spacing": [ERR, {
+    "beforeColon": false,
+    "afterColon": true,
   }],
   "@typescript-eslint/keyword-spacing": [ERR, {
     "before": true,
