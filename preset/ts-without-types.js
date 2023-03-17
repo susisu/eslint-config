@@ -16,6 +16,7 @@ const overrides = {
   "init-declarations": OFF,
   "key-spacing": OFF,
   "keyword-spacing": OFF,
+  "lines-around-comment": OFF,
   "lines-between-class-members": OFF,
   "no-array-constructor": OFF,
   "no-dupe-class-members": OFF,
@@ -273,6 +274,7 @@ const layoutAndFormatting = {
     "before": true,
     "after": true,
   }],
+  "@typescript-eslint/lines-around-comment": OFF,
   "@typescript-eslint/lines-between-class-members": [ERR, "always", {
     "exceptAfterSingleLine": true,
   }],
