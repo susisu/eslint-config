@@ -120,8 +120,11 @@ const suggestions = {
     "objectLiteralTypeAssertions": "allow-as-parameter",
   }],
   "@typescript-eslint/consistent-type-definitions": OFF,
-  // to be investigated
-  "@typescript-eslint/consistent-type-imports": OFF,
+  "@typescript-eslint/consistent-type-imports": [ERR, {
+    "prefer": "type-imports",
+    "fixStyle": "separate-type-imports",
+    "disallowTypeAnnotations": true,
+  }],
   "@typescript-eslint/default-param-last": ERR,
   "@typescript-eslint/init-declarations": OFF,
   "@typescript-eslint/member-delimiter-style": [ERR, {
