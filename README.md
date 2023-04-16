@@ -17,7 +17,7 @@ Extend a preset in your .eslintrc file.
 
 - `@susisu/eslint-config/preset/js`: for JavaScript files
 - `@susisu/eslint-config/preset/ts`: for TypeScript files
-- `@susisu/eslint-config/preset/ts-without-types`: for TypeScript files (without using type information)
+- `@susisu/eslint-config/preset/ts-without-types`: for TypeScript files, without using type information
 
 Example:
 
@@ -25,7 +25,7 @@ Example:
 {
   "extends": ["@susisu/eslint-config/preset/js"],
   "parserOptions": {
-    "ecmaVersion": 2021
+    "ecmaVersion": 2022
   },
   "env": {
     "es6": true,
