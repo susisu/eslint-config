@@ -104,8 +104,13 @@ const suggestions = {
     "extendDefaults": true,
     "types": {
       "Object": {
-        "message": "Use {} instead",
+        "message": "Use object instead",
+        "fixWith": "object",
       },
+      // `{}` means "any non-nullish value", which includes `string`, `number`, etc.
+      // `{ toString: () => string }` means "any non-nullish value with `toString`",
+      // which also includes `string`, `number`, etc.
+      // I don't know why only `{}` is banned.
       "{}": false,
     },
   }],
