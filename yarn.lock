@@ -79,10 +79,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@susisu/eslint-plugin-safe-typescript@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@susisu/eslint-plugin-safe-typescript/-/eslint-plugin-safe-typescript-0.4.0.tgz#8a7b1fed7fe656a5c68460f4073adbc917660c21"
-  integrity sha512-4IWSgNlPa+wprUXAXsK7Px3FFzu8TmxO0E8ziYyI6Z39KRRZhWbb0aTVmtyKriC3q0aojOE03KsyDqXjaT8Dvw==
+"@susisu/eslint-plugin-safe-typescript@^0.4.1":
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@susisu/eslint-plugin-safe-typescript/-/eslint-plugin-safe-typescript-0.4.1.tgz#fc437cb5e35bdd639cda553d8c714d46571a0650"
+  integrity sha512-ELHxVjCX4TrT6++NK16ecz1L810R3RwkiamV/Ii1Kw1CvxkgGHN6HAvJq8vwf15FYa+ejRwucMZnfQH9EXINmQ==
   dependencies:
     "@typescript-eslint/utils" "^6.0.0"
 
