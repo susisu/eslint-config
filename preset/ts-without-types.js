@@ -237,7 +237,6 @@ const suggestions = {
   "@typescript-eslint/prefer-literal-enum-member": OFF,
   "@typescript-eslint/prefer-namespace-keyword": ERR,
   "@typescript-eslint/prefer-optional-chain": OFF,
-  "@typescript-eslint/sort-type-union-intersection-members": OFF,
   "@typescript-eslint/triple-slash-reference": [ERR, {
     "types": "prefer-import",
   }],
