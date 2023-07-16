@@ -60,7 +60,6 @@ const possibleProblems = {
     "allowTypedFunctionExpressions": true,
     "allowHigherOrderFunctions": true,
     "allowDirectConstAssertionInArrowFunctions": false,
-    "shouldTrackReferences": true,
   }],
   "@typescript-eslint/no-confusing-non-null-assertion": OFF,
   "@typescript-eslint/no-dupe-class-members": ERR,
