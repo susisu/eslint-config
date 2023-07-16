@@ -87,7 +87,7 @@ const possibleProblems = {
 
 const suggestions = {
   "accessor-pairs": OFF,
-  "arrow-body-style": [ERR, "as-needed"],
+  "arrow-body-style": OFF,
   "block-scoped-var": ERR,
   "camelcase": ERR,
   "capitalized-comments": OFF,
@@ -265,7 +265,7 @@ const layoutAndFormatting = {
   "array-bracket-newline": OFF,
   "array-bracket-spacing": [ERR, "never"],
   "array-element-newline": OFF,
-  "arrow-parens": [ERR, "as-needed"],
+  "arrow-parens": [ERR, "always"],
   "arrow-spacing": [ERR, {
     "before": true,
     "after": true,
