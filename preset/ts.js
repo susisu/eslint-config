@@ -35,9 +35,7 @@ const possibleProblems = {
   "@typescript-eslint/no-unsafe-return": WRN,
   "@typescript-eslint/prefer-reduce-type-parameter": ERR,
   "@typescript-eslint/require-array-sort-compare": OFF,
-  "@typescript-eslint/restrict-plus-operands": [WRN, {
-    "checkCompoundAssignments": true,
-  }],
+  "@typescript-eslint/restrict-plus-operands": WRN,
   "@typescript-eslint/restrict-template-expressions": [WRN, {
     "allowNumber": true,
   }],
