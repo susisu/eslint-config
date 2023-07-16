@@ -26,7 +26,7 @@ export async function foo() {
 }
 
 foo();
-foo().catch(err => {
+foo().catch((err) => {
   const msg = err.toString();
   // eslint-disable-next-line no-console
   console.error(msg);

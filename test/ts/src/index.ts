@@ -29,7 +29,7 @@ export async function foo(): Promise<number> {
 
 // eslint-disable-next-line @typescript-eslint/no-floating-promises
 foo();
-foo().catch(err => {
+foo().catch((err) => {
   /* eslint-disable-next-line
       @typescript-eslint/no-unsafe-assignment,
       @typescript-eslint/no-unsafe-member-access,
