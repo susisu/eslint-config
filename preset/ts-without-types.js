@@ -8,6 +8,7 @@ const overrides = {
   "brace-style": OFF,
   // overridden by @typescript-eslint/naming-convention
   "camelcase": OFF,
+  "class-methods-use-this": OFF,
   "comma-dangle": OFF,
   "comma-spacing": OFF,
   "default-param-last": OFF,
@@ -113,6 +114,7 @@ const suggestions = {
       "{}": false,
     },
   }],
+  "@typescript-eslint/class-methods-use-this": OFF,
   "@typescript-eslint/comma-spacing": [ERR, {
     "before": false,
     "after": true,
