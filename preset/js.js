@@ -1,7 +1,7 @@
 "use strict";
 
-const js = require("../lib/rules/js");
+const jsRules = require("../lib/rules/js");
 
 module.exports = {
-  rules: js.rules,
+  rules: jsRules.rules,
 };

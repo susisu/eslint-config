@@ -1,9 +1,9 @@
 "use strict";
 
-const ts = require("../lib/rules/ts");
+const tsRules = require("../lib/rules/ts");
 
 module.exports = {
   parser: "@typescript-eslint/parser",
   plugins: ["@typescript-eslint", "@susisu/safe-typescript"],
-  rules: ts.rules,
+  rules: tsRules.rules,
 };
