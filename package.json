@@ -18,7 +18,7 @@
     "test": "run-s -c test:*",
     "test:js": "./test/js/run.sh",
     "test:ts": "./test/ts/run.sh",
-    "test:ts-without-types": "./test/ts-without-types/run.sh",
+    "test:ts-type-checked": "./test/ts-type-checked/run.sh",
     "prepublishOnly": "run-s lint test"
   },
   "dependencies": {
