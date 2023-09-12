@@ -193,7 +193,6 @@ const suggestions = {
   "no-restricted-properties": OFF,
   "no-restricted-syntax": OFF,
   "no-return-assign": ERR,
-  "no-return-await": ERR,
   "no-script-url": OFF,
   "no-sequences": ERR,
   "no-shadow": OFF,
