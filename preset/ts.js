@@ -1,7 +1,7 @@
 "use strict";
 
 const { OFF, WRN, ERR } = require("../lib/levels");
-const { removeOffRules } = require("../lib/utils");
+const { removeDisabledRules } = require("../lib/utils");
 
 const overrides = {
   "dot-notation": OFF,
@@ -89,7 +89,7 @@ module.exports = {
   extends: ["./ts-without-types"],
   rules: {
     ...overrides,
-    ...removeOffRules(
+    ...removeDisabledRules(
       {
         ...possibleProblems,
         ...suggestions,

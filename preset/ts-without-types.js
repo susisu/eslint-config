@@ -1,7 +1,7 @@
 "use strict";
 
 const { OFF, WRN, ERR } = require("../lib/levels");
-const { removeOffRules } = require("../lib/utils");
+const { removeDisabledRules } = require("../lib/utils");
 
 const overrides = {
   "block-spacing": OFF,
@@ -320,7 +320,7 @@ module.exports = {
   plugins: ["@typescript-eslint", "@susisu/safe-typescript"],
   rules: {
     ...overrides,
-    ...removeOffRules(
+    ...removeDisabledRules(
       {
         ...possibleProblems,
         ...suggestions,

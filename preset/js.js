@@ -1,7 +1,7 @@
 "use strict";
 
 const { OFF, WRN, ERR } = require("../lib/levels");
-const { removeOffRules } = require("../lib/utils");
+const { removeDisabledRules } = require("../lib/utils");
 
 const possibleProblems = {
   "array-callback-return": ERR,
@@ -400,7 +400,7 @@ const layoutAndFormatting = {
 };
 
 module.exports = {
-  rules: removeOffRules(
+  rules: removeDisabledRules(
     {
       ...possibleProblems,
       ...suggestions,
