@@ -13,8 +13,8 @@
     "config"
   ],
   "scripts": {
-    "lint": "eslint *.js lib preset",
-    "lint-fix": "eslint --fix *.js lib preset",
+    "lint": "eslint *.js lib config preset",
+    "lint-fix": "eslint --fix *.js lib config preset",
     "test": "run-s -c test:*",
     "test:js": "./test/js/run.sh",
     "test:ts": "./test/ts/run.sh",
