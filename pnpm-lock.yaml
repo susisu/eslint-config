@@ -19,6 +19,9 @@ devDependencies:
   eslint:
     specifier: ^8.49.0
     version: 8.49.0
+  globals:
+    specifier: ^13.21.0
+    version: 13.21.0
   npm-run-all:
     specifier: ^4.1.5
     version: 4.1.5
