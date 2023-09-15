@@ -7,7 +7,7 @@ const config = require("../..");
 module.exports = [
   merge(
     {
-      files: ["src/**/*.ts"],
+      files: ["**/*.ts"],
     },
     config.ts,
     {

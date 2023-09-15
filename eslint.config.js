@@ -7,7 +7,7 @@ const config = require(".");
 module.exports = [
   merge(
     {
-      files: ["*.js", "{lib,preset,config}/**/*.js"],
+      files: ["**/*.js"],
     },
     config.js,
     {
