@@ -6,9 +6,11 @@ const config = require("../..");
 
 module.exports = [
   merge(
-    config.ts,
     {
       files: ["src/**/*.ts"],
+    },
+    config.ts,
+    {
       languageOptions: {
         ecmaVersion: 2021,
         sourceType: "module",

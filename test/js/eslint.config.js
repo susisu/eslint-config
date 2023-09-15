@@ -6,9 +6,11 @@ const config = require("../..");
 
 module.exports = [
   merge(
-    config.js,
     {
       files: ["src/**/*.js"],
+    },
+    config.js,
+    {
       languageOptions: {
         ecmaVersion: 2021,
         sourceType: "module",
