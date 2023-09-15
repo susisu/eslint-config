@@ -13,9 +13,10 @@
     "config"
   ],
   "scripts": {
-    "lint": "eslint *.js lib config preset",
-    "lint-fix": "eslint --fix *.js lib config preset",
-    "test": "run-s -c configtest:*",
+    "lint": "eslint *.js lib test config preset",
+    "lint-fix": "eslint --fix *.js lib test config preset",
+    "test": "run-s -c test:* configtest:*",
+    "test:lib": "node --test test",
     "configtest:js": "./configtest/js/run.sh",
     "configtest:ts": "./configtest/ts/run.sh",
     "configtest:ts-type-checked": "./configtest/ts-type-checked/run.sh",
