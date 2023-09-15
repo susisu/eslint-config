@@ -15,10 +15,10 @@
   "scripts": {
     "lint": "eslint *.js lib config preset",
     "lint-fix": "eslint --fix *.js lib config preset",
-    "test": "run-s -c test:*",
-    "test:js": "./test/js/run.sh",
-    "test:ts": "./test/ts/run.sh",
-    "test:ts-type-checked": "./test/ts-type-checked/run.sh",
+    "test": "run-s -c configtest:*",
+    "configtest:js": "./configtest/js/run.sh",
+    "configtest:ts": "./configtest/ts/run.sh",
+    "configtest:ts-type-checked": "./configtest/ts-type-checked/run.sh",
     "prepublishOnly": "run-s lint test"
   },
   "dependencies": {
