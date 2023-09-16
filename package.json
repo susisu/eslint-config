@@ -2,20 +2,31 @@
   "name": "@susisu/eslint-config",
   "version": "0.0.66",
   "description": "My ESLint config",
-  "main": "index.js",
   "repository": "https://github.com/susisu/eslint-config.git",
   "author": "Susisu <susisu2413@yahoo.co.jp>",
   "license": "MIT",
+  "type": "commonjs",
+  "main": "index.js",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "default": "./index.js"
+    },
+    "./preset/js": "./preset/js.js",
+    "./preset/ts-without-types": "./preset/ts-without-types.js",
+    "./preset/ts": "./preset/ts.js"
+  },
   "files": [
     "index.js",
+    "index.mjs",
     "lib",
     "preset",
     "config",
     "!**/*.test.js"
   ],
   "scripts": {
-    "lint": "eslint *.js lib preset config",
-    "lint-fix": "eslint --fix *.js lib preset config",
+    "lint": "eslint *.js *.mjs lib preset config",
+    "lint-fix": "eslint --fix *.js *.mjs lib preset config",
     "test": "node --test lib preset config",
     "configtest": "run-s -c configtest:*",
     "configtest:js": "./configtest/js/run.sh",
