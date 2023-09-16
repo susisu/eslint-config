@@ -25,10 +25,10 @@
     "!**/*.test.js"
   ],
   "scripts": {
-    "lint": "eslint *.js *.mjs lib preset config",
-    "lint-fix": "eslint --fix *.js *.mjs lib preset config",
+    "lint": "eslint '*.js' '*.mjs' lib preset config",
+    "lint-fix": "eslint --fix '*.js' '*.mjs' lib preset config",
     "test": "node --test lib preset config",
-    "configtest": "run-s -c configtest:*",
+    "configtest": "run-s -c 'configtest:*'",
     "configtest:js": "./configtest/js/run.sh",
     "configtest:ts": "./configtest/ts/run.sh",
     "configtest:ts-type-checked": "./configtest/ts-type-checked/run.sh",
