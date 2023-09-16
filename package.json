@@ -16,12 +16,12 @@
   "scripts": {
     "lint": "eslint *.js lib preset config",
     "lint-fix": "eslint --fix *.js lib preset config",
-    "test": "run-s -c test:* configtest:*",
-    "test:lib": "node --test lib preset config",
+    "test": "node --test lib preset config",
+    "configtest": "run-s -c configtest:*",
     "configtest:js": "./configtest/js/run.sh",
     "configtest:ts": "./configtest/ts/run.sh",
     "configtest:ts-type-checked": "./configtest/ts-type-checked/run.sh",
-    "prepublishOnly": "run-s lint test"
+    "prepublishOnly": "run-s lint test configtest"
   },
   "dependencies": {
     "@susisu/eslint-plugin-safe-typescript": "^0.4.1",
