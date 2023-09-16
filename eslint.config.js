@@ -12,7 +12,6 @@ module.exports = [
       config.js,
       {
         languageOptions: {
-          ecmaVersion: 2021,
           sourceType: "commonjs",
           globals: {
             ...globals.es2021,
@@ -30,7 +29,6 @@ module.exports = [
       config.js,
       {
         languageOptions: {
-          ecmaVersion: 2021,
           sourceType: "module",
           globals: {
             ...globals.es2021,

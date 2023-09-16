@@ -12,7 +12,6 @@ module.exports = [
       config.tsTypeChecked,
       {
         languageOptions: {
-          ecmaVersion: 2021,
           sourceType: "module",
           parserOptions: {
             project: "tsconfig.json",
@@ -23,6 +22,6 @@ module.exports = [
           },
         },
       },
-    ],
+    ]
   ),
 ];

@@ -12,7 +12,6 @@ module.exports = [
       config.ts,
       {
         languageOptions: {
-          ecmaVersion: 2021,
           sourceType: "module",
           globals: {
             ...globals.es2021,
@@ -20,6 +19,6 @@ module.exports = [
           },
         },
       },
-    ],
+    ]
   ),
 ];

@@ -36,7 +36,7 @@ To use a preset, extend it in your eslintrc file.
       "files": ["**/*.js"],
       "extends": ["@susisu/eslint-config/preset/js"],
       "parserOptions": {
-        "ecmaVersion": 2022,
+        "ecmaVersion": "latest",
         "sourceType": "module"
       },
       "rules": {
@@ -69,7 +69,6 @@ export default [
       config.js,
       {
         languageOptions: {
-          ecmaVersion: 2022,
           sourceType: "module",
         },
         rules: {
@@ -94,7 +93,6 @@ export default [
   {
     files: ["**/*.js"],
     languageOptions: {
-      ecmaVersion: 2022,
       sourceType: "module",
     },
     rules: {
