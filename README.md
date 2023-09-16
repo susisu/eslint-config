@@ -19,25 +19,89 @@ pnpm add -D eslint @susisu/eslint-config
 
 ## Usage
 
-Extend a preset in your .eslintrc file.
+## eslintrc
 
-- `@susisu/eslint-config/preset/js`: for JavaScript files
-- `@susisu/eslint-config/preset/ts`: for TypeScript files
-- `@susisu/eslint-config/preset/ts-without-types`: for TypeScript files, without using type information
+There are three preset configurations for JavaScript and TypeScript:
 
-Example:
+- `@susisu/eslint-config/preset/js`: preset for JavaScript
+- `@susisu/eslint-config/preset/ts`: preset for TypeScript + rules that require type information
+- `@susisu/eslint-config/preset/ts-without-types`: preset for TypeScript
+
+To use a preset, extend it in your eslintrc file.
 
 ``` json
 {
-  "extends": ["@susisu/eslint-config/preset/js"],
-  "parserOptions": {
-    "ecmaVersion": 2022
-  },
-  "env": {
-    "es6": true,
-    "node": true
-  }
+  "overrides": [
+    {
+      "files": ["**/*.js"],
+      "extends": ["@susisu/eslint-config/preset/js"],
+      "parserOptions": {
+        "ecmaVersion": 2022,
+        "sourceType": "module"
+      },
+      "rules": {
+        "no-console": "off"
+      }
+    }
+  ]
 }
+```
+
+## Flat Configs (beta)
+
+There are three preset configurations for JavaScript and TypeScript:
+
+- `config.js`: preset for JavaScript
+- `config.ts`: preset for TypeScript
+- `config.tsTypeChecked`: preset for TypeScript + rules that require type information
+
+The package also provides a utility function `map(base, configs)` to easily extend configurations.
+
+``` js
+import { config, map } from "@susisu/eslint-config";
+
+export default [
+  ...map(
+    {
+      files: ["**/*.js"],
+    },
+    [
+      config.js,
+      {
+        languageOptions: {
+          ecmaVersion: 2022,
+          sourceType: "module",
+        },
+        rules: {
+          "no-console": "off",
+        },
+      },
+    ],
+  ),
+];
+```
+
+The above code is equal to
+
+``` js
+import { config } from "@susisu/eslint-config";
+
+export default [
+  {
+    files: ["**/*.js"],
+    ...config.js,
+  },
+  {
+    files: ["**/*.js"],
+    languageOptions: {
+      ecmaVersion: 2022,
+      sourceType: "module",
+    },
+    rules: {
+      "no-console": "off",
+    },
+  },
+];
 ```
 
 ## Error levels
