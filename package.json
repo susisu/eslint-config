@@ -10,13 +10,14 @@
     "index.js",
     "lib",
     "preset",
-    "config"
+    "config",
+    "!**/*.test.js"
   ],
   "scripts": {
-    "lint": "eslint *.js lib test config preset",
-    "lint-fix": "eslint --fix *.js lib test config preset",
+    "lint": "eslint *.js lib preset config",
+    "lint-fix": "eslint --fix *.js lib preset config",
     "test": "run-s -c test:* configtest:*",
-    "test:lib": "node --test test",
+    "test:lib": "node --test lib preset config",
     "configtest:js": "./configtest/js/run.sh",
     "configtest:ts": "./configtest/ts/run.sh",
     "configtest:ts-type-checked": "./configtest/ts-type-checked/run.sh",
