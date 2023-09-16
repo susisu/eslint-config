@@ -1,14 +1,12 @@
 "use strict";
 
 const globals = require("globals");
-const merge = require("lodash.merge");
-const config = require(".");
+const { config, map } = require(".");
 
 module.exports = [
-  merge(
-    {
-      files: ["**/*.js"],
-    },
+  ...map({
+    files: ["**/*.js"],
+  }, [
     config.js,
     {
       languageOptions: {
@@ -19,6 +17,6 @@ module.exports = [
           ...globals.node,
         },
       },
-    }
-  ),
+    },
+  ]),
 ];
