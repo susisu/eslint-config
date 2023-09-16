@@ -22,9 +22,6 @@ devDependencies:
   globals:
     specifier: ^13.21.0
     version: 13.21.0
-  lodash.merge:
-    specifier: ^4.6.2
-    version: 4.6.2
   npm-run-all:
     specifier: ^4.1.5
     version: 4.1.5
