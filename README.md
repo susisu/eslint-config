@@ -47,7 +47,7 @@ To use a preset, extend it in your eslintrc file.
 }
 ```
 
-## Flat Configs (beta)
+## Flat Config (beta)
 
 There are three preset configurations for JavaScript and TypeScript:
 
