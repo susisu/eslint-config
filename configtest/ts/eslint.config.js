@@ -9,7 +9,7 @@ module.exports = [
       files: ["**/*.ts"],
     },
     [
-      config.ts,
+      config.ts(),
       {
         languageOptions: {
           sourceType: "module",

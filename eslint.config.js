@@ -9,7 +9,7 @@ module.exports = [
       files: ["**/*.js"],
     },
     [
-      config.js,
+      config.js(),
       {
         languageOptions: {
           sourceType: "commonjs",
@@ -26,7 +26,7 @@ module.exports = [
       files: ["**/*.mjs"],
     },
     [
-      config.js,
+      config.js(),
       {
         languageOptions: {
           sourceType: "module",

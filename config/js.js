@@ -2,9 +2,11 @@
 
 const jsRules = require("../lib/rules/js");
 
-module.exports = {
-  linterOptions: {
-    reportUnusedDisableDirectives: true,
-  },
-  rules: jsRules.rules,
+module.exports = () => {
+  return {
+    linterOptions: {
+      reportUnusedDisableDirectives: true,
+    },
+    rules: jsRules.rules,
+  };
 };
