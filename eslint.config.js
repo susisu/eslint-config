@@ -1,6 +1,7 @@
 "use strict";
 
 const globals = require("globals");
+const prettierConfig = require("eslint-config-prettier");
 const { config, map } = require(".");
 
 module.exports = [
@@ -10,6 +11,7 @@ module.exports = [
     },
     [
       config.js(),
+      prettierConfig,
       {
         languageOptions: {
           sourceType: "commonjs",
@@ -19,7 +21,7 @@ module.exports = [
           },
         },
       },
-    ]
+    ],
   ),
   ...map(
     {
@@ -27,6 +29,7 @@ module.exports = [
     },
     [
       config.js(),
+      prettierConfig,
       {
         languageOptions: {
           sourceType: "module",
@@ -36,6 +39,6 @@ module.exports = [
           },
         },
       },
-    ]
+    ],
   ),
 ];

@@ -19,6 +19,8 @@ pnpm add -D eslint @susisu/eslint-config
 
 ## Usage
 
+*NOTE: Formatting rules are not enabled. I recommend using [Prettier](https://prettier.io).*
+
 ## eslintrc
 
 There are three preset configurations for JavaScript and TypeScript:

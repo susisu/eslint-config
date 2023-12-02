@@ -25,8 +25,10 @@
     "!**/*.test.js"
   ],
   "scripts": {
-    "lint": "eslint '*.js' '*.mjs' lib preset config",
-    "lint-fix": "eslint --fix '*.js' '*.mjs' lib preset config",
+    "format": "prettier --write '*.js' '*.mjs' lib preset config",
+    "format:check": "prettier --check '*.js' '*.mjs' lib preset config",
+    "lint": "eslint --fix '*.js' '*.mjs' lib preset config",
+    "lint:check": "eslint '*.js' '*.mjs' lib preset config",
     "test": "node --test lib preset config",
     "configtest": "run-s -c 'configtest:*'",
     "configtest:js": "./configtest/js/run.sh",
@@ -35,6 +37,7 @@
     "prepublishOnly": "run-s lint test configtest"
   },
   "dependencies": {
+    "@stylistic/eslint-plugin": "^1.4.1",
     "@susisu/eslint-plugin-safe-typescript": "^0.4.1",
     "@typescript-eslint/eslint-plugin": "^6.13.1",
     "@typescript-eslint/parser": "^6.13.1"
@@ -44,8 +47,10 @@
   },
   "devDependencies": {
     "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.0.0",
     "globals": "^13.23.0",
     "npm-run-all": "^4.1.5",
+    "prettier": "^3.1.0",
     "typescript": "~5.3.2"
   }
 }
