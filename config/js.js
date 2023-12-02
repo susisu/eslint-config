@@ -1,6 +1,6 @@
 "use strict";
 
-const styliticPlugin = require("@stylistic/eslint-plugin");
+const stylisticPlugin = require("@stylistic/eslint-plugin");
 
 const jsRules = require("../lib/rules/js");
 const stylisticRules = require("../lib/rules/stylistic");
@@ -11,7 +11,7 @@ module.exports = () => {
       reportUnusedDisableDirectives: true,
     },
     plugins: {
-      "@stylistic": styliticPlugin,
+      "@stylistic": stylisticPlugin,
     },
     rules: {
       ...jsRules.rules,
