@@ -37,6 +37,7 @@
     "prepublishOnly": "run-s lint test configtest"
   },
   "dependencies": {
+    "@stylistic/eslint-plugin": "^1.4.1",
     "@susisu/eslint-plugin-safe-typescript": "^0.4.1",
     "@typescript-eslint/eslint-plugin": "^6.13.1",
     "@typescript-eslint/parser": "^6.13.1"
@@ -45,7 +46,6 @@
     "eslint": "^8.50.0"
   },
   "devDependencies": {
-    "@stylistic/eslint-plugin": "^1.4.1",
     "eslint": "^8.55.0",
     "eslint-config-prettier": "^9.0.0",
     "globals": "^13.23.0",
