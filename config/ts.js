@@ -7,16 +7,18 @@ const safeTsPlugin = require("@susisu/eslint-plugin-safe-typescript");
 
 const tsRules = require("../lib/rules/ts");
 
-module.exports = {
-  linterOptions: {
-    reportUnusedDisableDirectives: true,
-  },
-  languageOptions: {
-    parser: tsEslintParser,
-  },
-  plugins: {
-    "@typescript-eslint": tsEslintPlugin,
-    "@susisu/safe-typescript": safeTsPlugin,
-  },
-  rules: tsRules.rules,
+module.exports = () => {
+  return {
+    linterOptions: {
+      reportUnusedDisableDirectives: true,
+    },
+    languageOptions: {
+      parser: tsEslintParser,
+    },
+    plugins: {
+      "@typescript-eslint": tsEslintPlugin,
+      "@susisu/safe-typescript": safeTsPlugin,
+    },
+    rules: tsRules.rules,
+  };
 };

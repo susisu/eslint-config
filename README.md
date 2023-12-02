@@ -66,7 +66,7 @@ export default [
       files: ["**/*.js"],
     },
     [
-      config.js,
+      config.js(),
       {
         languageOptions: {
           sourceType: "module",
@@ -88,7 +88,7 @@ import { config } from "@susisu/eslint-config";
 export default [
   {
     files: ["**/*.js"],
-    ...config.js,
+    ...config.js(),
   },
   {
     files: ["**/*.js"],

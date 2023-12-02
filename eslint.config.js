@@ -10,7 +10,7 @@ module.exports = [
       files: ["**/*.js"],
     },
     [
-      config.js,
+      config.js(),
       prettierConfig,
       {
         languageOptions: {
@@ -28,7 +28,7 @@ module.exports = [
       files: ["**/*.mjs"],
     },
     [
-      config.js,
+      config.js(),
       prettierConfig,
       {
         languageOptions: {
