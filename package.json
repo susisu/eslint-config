@@ -34,7 +34,7 @@
     "configtest:js": "./configtest/js/run.sh",
     "configtest:ts": "./configtest/ts/run.sh",
     "configtest:ts-type-checked": "./configtest/ts-type-checked/run.sh",
-    "prepublishOnly": "run-s lint test configtest"
+    "prepublishOnly": "run-s format:check lint:check test configtest"
   },
   "dependencies": {
     "@stylistic/eslint-plugin": "^1.4.1",
