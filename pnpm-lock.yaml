@@ -9,8 +9,8 @@ dependencies:
     specifier: ^1.4.1
     version: 1.4.1(eslint@8.55.0)(typescript@5.3.2)
   '@susisu/eslint-plugin-safe-typescript':
-    specifier: ^0.4.1
-    version: 0.4.1(@typescript-eslint/parser@6.13.1)(eslint@8.55.0)(typescript@5.3.2)
+    specifier: ^0.5.0
+    version: 0.5.0(@typescript-eslint/parser@6.13.1)(eslint@8.55.0)(typescript@5.3.2)
   '@typescript-eslint/eslint-plugin':
     specifier: ^6.13.1
     version: 6.13.1(@typescript-eslint/parser@6.13.1)(eslint@8.55.0)(typescript@5.3.2)
@@ -23,8 +23,8 @@ devDependencies:
     specifier: ^8.55.0
     version: 8.55.0
   eslint-config-prettier:
-    specifier: ^9.0.0
-    version: 9.0.0(eslint@8.55.0)
+    specifier: ^9.1.0
+    version: 9.1.0(eslint@8.55.0)
   globals:
     specifier: ^13.23.0
     version: 13.23.0
@@ -167,8 +167,8 @@ packages:
       - typescript
     dev: false
 
-  /@susisu/eslint-plugin-safe-typescript@0.4.1(@typescript-eslint/parser@6.13.1)(eslint@8.55.0)(typescript@5.3.2):
-    resolution: {integrity: sha512-ELHxVjCX4TrT6++NK16ecz1L810R3RwkiamV/Ii1Kw1CvxkgGHN6HAvJq8vwf15FYa+ejRwucMZnfQH9EXINmQ==}
+  /@susisu/eslint-plugin-safe-typescript@0.5.0(@typescript-eslint/parser@6.13.1)(eslint@8.55.0)(typescript@5.3.2):
+    resolution: {integrity: sha512-vp7+ufGxVK/EJT6PV17p4Iq6hHZh/P5IZStLpD/m9DjxF2oLmPbJFHP8IpiJMT5SMEe0ThMMnlFhGoA2P/cNbw==}
     peerDependencies:
       '@typescript-eslint/parser': '>=6.0.0'
       typescript: '*'
@@ -590,8 +590,8 @@ packages:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
 
-  /eslint-config-prettier@9.0.0(eslint@8.55.0):
-    resolution: {integrity: sha512-IcJsTkJae2S35pRsRAwoCE+925rJJStOdkKnLVgtE+tEpqU0EVVM7OqrwxqgptKdX29NUwC82I5pXsGFIgSevw==}
+  /eslint-config-prettier@9.1.0(eslint@8.55.0):
+    resolution: {integrity: sha512-NSWl5BFQWEPi1j4TjVNItzYV7dZXZ+wP6I6ZhrBGpChQhZRUaElihE9uRRkcbRnNb76UMKDF3r+WTmNcGPKsqw==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
