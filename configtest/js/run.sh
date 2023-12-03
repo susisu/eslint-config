@@ -2,4 +2,4 @@
 
 cd $(dirname "$0")
 set -eux
-eslint src
+eslint --max-warnings 0 src
