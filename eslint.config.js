@@ -1,6 +1,6 @@
+import { config, map } from "@susisu/eslint-config-stable";
 import globals from "globals";
 import prettierConfig from "eslint-config-prettier";
-import { config, map } from ".";
 
 export default [
   ...map({ files: ["**/*.ts"] }, [
