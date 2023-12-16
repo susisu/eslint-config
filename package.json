@@ -6,23 +6,29 @@
   "author": "Susisu <susisu2413@yahoo.co.jp>",
   "license": "MIT",
   "type": "commonjs",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "exports": {
     ".": {
-      "import": "./index.mjs",
-      "default": "./index.js"
+      "import": {
+        "default": "./lib/index.mjs",
+        "types": "./lib/index.d.mts"
+      },
+      "require": {
+        "default": "./lib/index.js",
+        "types": "./lib/index.d.ts"
+      }
     },
     "./preset/js": "./preset/js.js",
     "./preset/ts-without-types": "./preset/ts-without-types.js",
     "./preset/ts": "./preset/ts.js"
   },
   "files": [
-    "index.js",
-    "index.mjs",
     "lib",
     "preset",
-    "config",
-    "!**/*.test.js"
+    "src",
+    "!src/**/*.spec.ts",
+    "!src/**/__tests__"
   ],
   "scripts": {
     "format": "prettier --write '*.js' '*.mjs' src preset",
