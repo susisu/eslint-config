@@ -25,11 +25,12 @@
     "!**/*.test.js"
   ],
   "scripts": {
-    "format": "prettier --write '*.js' '*.mjs' lib preset config",
-    "format:check": "prettier --check '*.js' '*.mjs' lib preset config",
-    "lint": "eslint --fix '*.js' '*.mjs' lib preset config",
-    "lint:check": "eslint '*.js' '*.mjs' lib preset config",
-    "test": "node --test lib preset config",
+    "format": "prettier --write '*.js' '*.mjs' src lib preset config",
+    "format:check": "prettier --check '*.js' '*.mjs' src lib preset config",
+    "lint": "eslint --fix '*.js' '*.mjs' src lib preset config",
+    "lint:check": "eslint '*.js' '*.mjs' src lib preset config",
+    "test": "vitest run --coverage",
+    "test:dev": "vitest dev --coverage.enabled --coverage.reporter=text",
     "configtest": "run-s -c 'configtest:*'",
     "configtest:js": "./configtest/js/run.sh",
     "configtest:ts": "./configtest/ts/run.sh",
@@ -40,17 +41,20 @@
     "@stylistic/eslint-plugin": "^1.4.1",
     "@susisu/eslint-plugin-safe-typescript": "^0.5.0",
     "@typescript-eslint/eslint-plugin": "^6.13.1",
-    "@typescript-eslint/parser": "^6.13.1"
+    "@typescript-eslint/parser": "^6.13.1",
+    "eslint-define-config": "^2.0.0"
   },
   "peerDependencies": {
     "eslint": "^8.50.0"
   },
   "devDependencies": {
+    "@vitest/coverage-v8": "^1.0.4",
     "eslint": "^8.55.0",
     "eslint-config-prettier": "^9.1.0",
     "globals": "^13.23.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^3.1.0",
-    "typescript": "~5.3.2"
+    "typescript": "~5.3.2",
+    "vitest": "^1.0.4"
   }
 }
