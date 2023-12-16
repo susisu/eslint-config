@@ -31,10 +31,10 @@
     "!src/**/__tests__"
   ],
   "scripts": {
-    "format": "prettier --write '*.js' '*.mjs' src preset",
-    "format:check": "prettier --check '*.js' '*.mjs' src preset",
-    "lint": "eslint --fix '*.js' '*.mjs' src preset",
-    "lint:check": "eslint '*.js' '*.mjs' src preset",
+    "format": "prettier --write '*.js' src preset",
+    "format:check": "prettier --check '*.js' src preset",
+    "lint": "eslint --fix '*.js' src preset",
+    "lint:check": "eslint '*.js' src preset",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "vitest run --coverage",
     "test:dev": "vitest dev --coverage.enabled --coverage.reporter=text",

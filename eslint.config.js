@@ -32,17 +32,5 @@ module.exports = [
       },
     },
   ]),
-  ...map({ files: ["**/*.mjs"] }, [
-    config.js(),
-    {
-      languageOptions: {
-        sourceType: "module",
-        globals: {
-          ...globals.es2021,
-          ...globals.node,
-        },
-      },
-    },
-  ]),
   prettierConfig,
 ];
