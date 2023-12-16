@@ -9,8 +9,8 @@ dependencies:
     specifier: ^1.4.1
     version: 1.4.1(eslint@8.55.0)(typescript@5.3.2)
   '@susisu/eslint-plugin-safe-typescript':
-    specifier: ^0.5.0
-    version: 0.5.0(@typescript-eslint/parser@6.13.1)(eslint@8.55.0)(typescript@5.3.2)
+    specifier: ^0.5.2
+    version: 0.5.2(@typescript-eslint/parser@6.13.1)(eslint@8.55.0)(typescript@5.3.2)
   '@typescript-eslint/eslint-plugin':
     specifier: ^6.13.1
     version: 6.13.1(@typescript-eslint/parser@6.13.1)(eslint@8.55.0)(typescript@5.3.2)
@@ -588,7 +588,7 @@ packages:
       eslint: ^8.50.0
     dependencies:
       '@stylistic/eslint-plugin': 1.4.1(eslint@8.55.0)(typescript@5.3.2)
-      '@susisu/eslint-plugin-safe-typescript': 0.5.0(@typescript-eslint/parser@6.13.1)(eslint@8.55.0)(typescript@5.3.2)
+      '@susisu/eslint-plugin-safe-typescript': 0.5.2(@typescript-eslint/parser@6.13.1)(eslint@8.55.0)(typescript@5.3.2)
       '@typescript-eslint/eslint-plugin': 6.13.1(@typescript-eslint/parser@6.13.1)(eslint@8.55.0)(typescript@5.3.2)
       '@typescript-eslint/parser': 6.13.1(eslint@8.55.0)(typescript@5.3.2)
       eslint: 8.55.0
@@ -597,8 +597,8 @@ packages:
       - typescript
     dev: true
 
-  /@susisu/eslint-plugin-safe-typescript@0.5.0(@typescript-eslint/parser@6.13.1)(eslint@8.55.0)(typescript@5.3.2):
-    resolution: {integrity: sha512-vp7+ufGxVK/EJT6PV17p4Iq6hHZh/P5IZStLpD/m9DjxF2oLmPbJFHP8IpiJMT5SMEe0ThMMnlFhGoA2P/cNbw==}
+  /@susisu/eslint-plugin-safe-typescript@0.5.2(@typescript-eslint/parser@6.13.1)(eslint@8.55.0)(typescript@5.3.2):
+    resolution: {integrity: sha512-/r3tl3sTox6/KW8nrZxgyLa/1QC+J/PUBW+/cqZ+5XVYLVw2Q2dpSjhuVhKY7KRv1o1q54YZ0tuUBA9jHmciag==}
     peerDependencies:
       '@typescript-eslint/parser': '>=6.0.0'
       typescript: '*'
