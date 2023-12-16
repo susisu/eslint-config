@@ -25,17 +25,18 @@
     "!**/*.test.js"
   ],
   "scripts": {
-    "format": "prettier --write '*.js' '*.mjs' src lib preset config",
-    "format:check": "prettier --check '*.js' '*.mjs' src lib preset config",
-    "lint": "eslint --fix '*.js' '*.mjs' src lib preset config",
-    "lint:check": "eslint '*.js' '*.mjs' src lib preset config",
+    "format": "prettier --write '*.js' '*.mjs' src preset",
+    "format:check": "prettier --check '*.js' '*.mjs' src preset",
+    "lint": "eslint --fix '*.js' '*.mjs' src preset",
+    "lint:check": "eslint '*.js' '*.mjs' src preset",
     "test": "vitest run --coverage",
     "test:dev": "vitest dev --coverage.enabled --coverage.reporter=text",
     "configtest": "run-s -c 'configtest:*'",
     "configtest:js": "./configtest/js/run.sh",
     "configtest:ts": "./configtest/ts/run.sh",
     "configtest:ts-type-checked": "./configtest/ts-type-checked/run.sh",
-    "prepublishOnly": "run-s format:check lint:check test configtest"
+    "build": "tsup",
+    "prepublishOnly": "run-s format:check lint:check test configtest build"
   },
   "dependencies": {
     "@stylistic/eslint-plugin": "^1.4.1",
@@ -54,6 +55,7 @@
     "globals": "^13.23.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^3.1.0",
+    "tsup": "^8.0.1",
     "typescript": "~5.3.2",
     "vitest": "^1.0.4"
   }
