@@ -1,14 +1,13 @@
 "use strict";
 
-const tsTypeCheckedRules = require("../lib/rules/ts-type-checked");
-const stylisticRules = require("../lib/rules/stylistic");
+const { __internal__rules: rules } = require("../lib/index.cjs");
 
 module.exports = {
   reportUnusedDisableDirectives: true,
   parser: "@typescript-eslint/parser",
   plugins: ["@typescript-eslint", "@susisu/safe-typescript", "@stylistic"],
   rules: {
-    ...tsTypeCheckedRules.rules,
-    ...stylisticRules.rules,
+    ...rules.tsTypeChecked,
+    ...rules.stylistic,
   },
 };

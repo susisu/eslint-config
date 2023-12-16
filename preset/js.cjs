@@ -1,13 +1,12 @@
 "use strict";
 
-const jsRules = require("../lib/rules/js");
-const stylisticRules = require("../lib/rules/stylistic");
+const { __internal__rules: rules } = require("../lib/index.cjs");
 
 module.exports = {
   reportUnusedDisableDirectives: true,
   plugins: ["@stylistic"],
   rules: {
-    ...jsRules.rules,
-    ...stylisticRules.rules,
+    ...rules.js,
+    ...rules.stylistic,
   },
 };
