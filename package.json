@@ -29,6 +29,7 @@
     "format:check": "prettier --check '*.js' '*.mjs' src preset",
     "lint": "eslint --fix '*.js' '*.mjs' src preset",
     "lint:check": "eslint '*.js' '*.mjs' src preset",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "vitest run --coverage",
     "test:dev": "vitest dev --coverage.enabled --coverage.reporter=text",
     "configtest": "run-s -c 'configtest:*'",
@@ -36,7 +37,7 @@
     "configtest:ts": "./configtest/ts/run.sh",
     "configtest:ts-type-checked": "./configtest/ts-type-checked/run.sh",
     "build": "tsup",
-    "prepublishOnly": "run-s format:check lint:check test configtest build"
+    "prepublishOnly": "run-s format:check lint:check typecheck test configtest build"
   },
   "dependencies": {
     "@stylistic/eslint-plugin": "^1.4.1",
