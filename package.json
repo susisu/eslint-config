@@ -43,7 +43,8 @@
     "configtest": "run-s -c 'configtest:*'",
     "configtest:js": "./configtest/js/run.sh",
     "configtest:ts": "./configtest/ts/run.sh",
-    "configtest:ts-type-checked": "./configtest/ts-type-checked/run.sh"
+    "configtest:ts-type-checked": "./configtest/ts-type-checked/run.sh",
+    "configtest:eslintrc": "./configtest/eslintrc/run.sh"
   },
   "dependencies": {
     "@stylistic/eslint-plugin": "^1.4.1",
