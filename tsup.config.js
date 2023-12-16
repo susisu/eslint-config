@@ -1,8 +1,6 @@
-"use strict";
+import { defineConfig } from "tsup";
 
-const { defineConfig } = require("tsup");
-
-module.exports = defineConfig({
+export default defineConfig({
   entry: ["src/index.ts"],
   outDir: "./lib",
   format: ["esm", "cjs"],

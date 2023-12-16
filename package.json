@@ -5,23 +5,23 @@
   "repository": "https://github.com/susisu/eslint-config.git",
   "author": "Susisu <susisu2413@yahoo.co.jp>",
   "license": "MIT",
-  "type": "commonjs",
+  "type": "module",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "exports": {
     ".": {
       "import": {
-        "default": "./lib/index.mjs",
-        "types": "./lib/index.d.mts"
-      },
-      "require": {
         "default": "./lib/index.js",
         "types": "./lib/index.d.ts"
+      },
+      "require": {
+        "default": "./lib/index.cjs",
+        "types": "./lib/index.d.cts"
       }
     },
-    "./preset/js": "./preset/js.js",
-    "./preset/ts-without-types": "./preset/ts-without-types.js",
-    "./preset/ts": "./preset/ts.js"
+    "./preset/js": "./preset/js.cjs",
+    "./preset/ts-without-types": "./preset/ts-without-types.cjs",
+    "./preset/ts": "./preset/ts.cjs"
   },
   "files": [
     "lib",
