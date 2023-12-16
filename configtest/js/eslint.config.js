@@ -1,24 +1,17 @@
-"use strict";
+import { config, map } from "@susisu/eslint-config";
+import globals from "globals";
 
-const globals = require("globals");
-const { config, map } = require("../..");
-
-module.exports = [
-  ...map(
+export default [
+  ...map({ files: ["**/*.js"] }, [
+    config.js(),
     {
-      files: ["**/*.js"],
-    },
-    [
-      config.js(),
-      {
-        languageOptions: {
-          sourceType: "module",
-          globals: {
-            ...globals.es2021,
-            ...globals.node,
-          },
+      languageOptions: {
+        sourceType: "module",
+        globals: {
+          ...globals.es2021,
+          ...globals.node,
         },
       },
-    ]
-  ),
+    },
+  ]),
 ];
