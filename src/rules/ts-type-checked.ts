@@ -71,7 +71,12 @@ const suggestions: Rules = {
   "@typescript-eslint/promise-function-async": off,
   "@typescript-eslint/require-await": warn,
   "@typescript-eslint/strict-boolean-expressions": off,
-  "@typescript-eslint/switch-exhaustiveness-check": [warn, { requireDefaultForNonUnion: true }],
+  // "default-case" enforces the requirement for a `default` case.
+  // "switch-exhaustiveness-check" is enabled for additional information.
+  "@typescript-eslint/switch-exhaustiveness-check": [
+    warn,
+    { allowDefaultCaseForExhaustiveSwitch: true, requireDefaultForNonUnion: true },
+  ],
 };
 
 const layoutAndFormatting: Rules = {};
