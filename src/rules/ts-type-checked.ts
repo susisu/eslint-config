@@ -32,6 +32,7 @@ const possibleProblems: Rules = {
   "@typescript-eslint/no-unsafe-member-access": warn,
   "@typescript-eslint/no-unsafe-return": warn,
   "@typescript-eslint/no-unsafe-unary-minus": error,
+  "@typescript-eslint/no-useless-template-literals": error,
   "@typescript-eslint/prefer-reduce-type-parameter": error,
   "@typescript-eslint/require-array-sort-compare": off,
   "@typescript-eslint/restrict-plus-operands": warn,
