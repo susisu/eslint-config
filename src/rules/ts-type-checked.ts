@@ -68,7 +68,7 @@ const suggestions: Rules = {
   "@typescript-eslint/prefer-return-this-type": off,
   "@typescript-eslint/prefer-string-starts-ends-with": error,
   "@typescript-eslint/promise-function-async": off,
-  "@typescript-eslint/require-await": error,
+  "@typescript-eslint/require-await": warn,
   "@typescript-eslint/strict-boolean-expressions": off,
   "@typescript-eslint/switch-exhaustiveness-check": [warn, { requireDefaultForNonUnion: true }],
 };
