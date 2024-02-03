@@ -9,11 +9,13 @@ const overrides: Rules = {
   "no-implied-eval": off,
   "no-throw-literal": off,
   "prefer-destructuring": off,
+  "prefer-promise-reject-errors": off,
   "require-await": off,
 };
 
 const possibleProblems: Rules = {
   "@typescript-eslint/await-thenable": error,
+  "@typescript-eslint/no-array-delete": error,
   "@typescript-eslint/no-confusing-void-expression": [error, { ignoreArrowShorthand: true }],
   "@typescript-eslint/no-floating-promises": [warn, { ignoreVoid: false }],
   "@typescript-eslint/no-for-in-array": warn,
@@ -62,6 +64,7 @@ const suggestions: Rules = {
   "@typescript-eslint/prefer-destructuring": off,
   "@typescript-eslint/prefer-includes": warn,
   "@typescript-eslint/prefer-nullish-coalescing": off,
+  "@typescript-eslint/prefer-promise-reject-errors": [error, { allowEmptyReject: false }],
   // to be investigated
   "@typescript-eslint/prefer-readonly": off,
   "@typescript-eslint/prefer-readonly-parameter-types": off,
