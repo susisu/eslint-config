@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "noEmit": true,
     "rootDir": "src",
     "outDir": "dist",
     "target": "esnext",
