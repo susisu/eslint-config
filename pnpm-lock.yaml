@@ -29,8 +29,8 @@ dependencies:
 
 devDependencies:
   '@susisu/eslint-config-stable':
-    specifier: npm:@susisu/eslint-config@^0.0.75
-    version: /@susisu/eslint-config@0.0.75(eslint@8.56.0)(typescript@5.3.3)
+    specifier: npm:@susisu/eslint-config@^0.0.76
+    version: /@susisu/eslint-config@0.0.76(eslint@8.56.0)(typescript@5.3.3)
   '@vitest/coverage-v8':
     specifier: ^1.2.2
     version: 1.2.2(vitest@1.2.2)
@@ -588,16 +588,18 @@ packages:
       - supports-color
       - typescript
 
-  /@susisu/eslint-config@0.0.75(eslint@8.56.0)(typescript@5.3.3):
-    resolution: {integrity: sha512-Vcmm5U1zmFFkcPkimb7Mu+LEUCuDrfouIHn79pK9njDMnuQbuCJQ8JrvqGInbkbv1jjIhjaYG3rmQB//hOw9ew==}
+  /@susisu/eslint-config@0.0.76(eslint@8.56.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-ORvmPvo0foZva7NDgVpSjB/IoqzpUSqj8221aRICa+7XsL3GUxQ3zXmc+sd2X1cZ+G8V7S5JoWO9Q4AeZ7at+g==}
     peerDependencies:
       eslint: ^8.50.0
     dependencies:
       '@stylistic/eslint-plugin': 1.6.1(eslint@8.56.0)(typescript@5.3.3)
       '@susisu/eslint-plugin-safe-typescript': 0.5.3(@typescript-eslint/parser@6.21.0)(eslint@8.56.0)(typescript@5.3.3)
+      '@types/eslint-config-prettier': 6.11.3
       '@typescript-eslint/eslint-plugin': 6.21.0(@typescript-eslint/parser@6.21.0)(eslint@8.56.0)(typescript@5.3.3)
       '@typescript-eslint/parser': 6.21.0(eslint@8.56.0)(typescript@5.3.3)
       eslint: 8.56.0
+      eslint-config-prettier: 9.1.0(eslint@8.56.0)
       eslint-define-config: 2.1.0
     transitivePeerDependencies:
       - supports-color
@@ -619,7 +621,6 @@ packages:
 
   /@types/eslint-config-prettier@6.11.3:
     resolution: {integrity: sha512-3wXCiM8croUnhg9LdtZUJQwNcQYGWxxdOWDjPe1ykCqJFPVpzAKfs/2dgSoCtAvdPeaponcWPI7mPcGGp9dkKQ==}
-    dev: false
 
   /@types/estree@1.0.5:
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
@@ -1086,7 +1087,6 @@ packages:
       eslint: '>=7.0.0'
     dependencies:
       eslint: 8.56.0
-    dev: false
 
   /eslint-define-config@2.1.0:
     resolution: {integrity: sha512-QUp6pM9pjKEVannNAbSJNeRuYwW3LshejfyBBpjeMGaJjaDUpVps4C6KVR8R7dWZnD3i0synmrE36znjTkJvdQ==}
