@@ -51,57 +51,31 @@ To use a preset, extend it in your eslintrc file.
 
 ## Flat Config (beta)
 
-There are three preset configurations for JavaScript and TypeScript:
-
-- `config.js`: preset for JavaScript
-- `config.ts`: preset for TypeScript
-- `config.tsTypeChecked`: preset for TypeScript + rules that require type information
-
-The package also provides a utility function `map(base, configs)` to easily extend configurations.
+The package provides a factory function `make`, which configures all language settings and rules for each file types.
 
 ``` js
-import { config, map } from "@susisu/eslint-config";
+import { make } from "@susisu/eslint-config";
 
-export default [
-  ...map(
+export default make(
+  // options
+  {
+    // Default sourceType for .js and .ts files  (default: "module")
+    sourceType: "module",
+    // Set as languageOptions.parserOptions.project for TypeScript files (default: true)
+    tsProject: true,
+    // If true, mixes eslint-config-prettier to disable formatting rules (default: true)
+    prettier: true,
+  },
+  // your flat configs
+  [
     {
-      files: ["**/*.js"],
-    },
-    [
-      config.js(),
-      {
-        languageOptions: {
-          sourceType: "module",
-        },
-        rules: {
-          "no-console": "off",
-        },
+      files: ["/path/to/file.js"],
+      rules: {
+        "no-console": "off",
       },
-    ],
-  ),
-];
-```
-
-The above code is equal to
-
-``` js
-import { config } from "@susisu/eslint-config";
-
-export default [
-  {
-    files: ["**/*.js"],
-    ...config.js(),
-  },
-  {
-    files: ["**/*.js"],
-    languageOptions: {
-      sourceType: "module",
-    },
-    rules: {
-      "no-console": "off",
-    },
-  },
-];
+    }
+  ],
+);
 ```
 
 ## Error levels

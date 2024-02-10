@@ -1,17 +1,18 @@
-import { config, map } from "@susisu/eslint-config";
+import { make } from "@susisu/eslint-config";
 import globals from "globals";
 
-export default [
-  ...map({ files: ["**/*.js"] }, [
-    config.js(),
+export default make(
+  {
+    sourceType: "module",
+  },
+  [
     {
       languageOptions: {
-        sourceType: "module",
         globals: {
           ...globals.es2021,
           ...globals.node,
         },
       },
     },
-  ]),
-];
+  ],
+);

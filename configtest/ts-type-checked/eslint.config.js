@@ -1,20 +1,19 @@
-import { config, map } from "@susisu/eslint-config";
+import { make } from "@susisu/eslint-config";
 import globals from "globals";
 
-export default [
-  ...map({ files: ["**/*.ts"] }, [
-    config.tsTypeChecked(),
+export default make(
+  {
+    sourceType: "module",
+    tsProject: "tsconfig.json",
+  },
+  [
     {
       languageOptions: {
-        sourceType: "module",
-        parserOptions: {
-          project: "tsconfig.json",
-        },
         globals: {
           ...globals.es2021,
           ...globals.node,
         },
       },
     },
-  ]),
-];
+  ],
+);
