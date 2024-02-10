@@ -1,6 +1,6 @@
 {
   "name": "@susisu/eslint-config",
-  "version": "0.0.75",
+  "version": "0.0.76",
   "description": "My ESLint config",
   "repository": "https://github.com/susisu/eslint-config.git",
   "author": "Susisu <susisu2413@yahoo.co.jp>",
