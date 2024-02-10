@@ -1,18 +1,13 @@
 import { make } from "@susisu/eslint-config";
 import globals from "globals";
 
-export default make(
+export default make({ tsProject: false }, [
   {
-    sourceType: "module",
-  },
-  [
-    {
-      languageOptions: {
-        globals: {
-          ...globals.es2021,
-          ...globals.node,
-        },
+    languageOptions: {
+      globals: {
+        ...globals.es2021,
+        ...globals.node,
       },
     },
-  ],
-);
+  },
+]);
