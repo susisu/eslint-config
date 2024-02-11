@@ -1,7 +1,7 @@
-import { make } from "@susisu/eslint-config";
+import { config } from "@susisu/eslint-config";
 import globals from "globals";
 
-export default make({}, [
+export default config({}, [
   {
     languageOptions: {
       globals: {

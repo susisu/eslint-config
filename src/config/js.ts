@@ -5,7 +5,7 @@ import stylisticPlugin from "@stylistic/eslint-plugin";
 
 import { js as jsRules, stylistic as stylisticRules } from "../rules";
 
-export function make(): FlatESLintConfig {
+export function config(): FlatESLintConfig {
   return defineFlatConfig({
     linterOptions: {
       reportUnusedDisableDirectives: true,

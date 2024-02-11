@@ -51,12 +51,12 @@ To use a preset, extend it in your eslintrc file.
 
 ## Flat Config (beta)
 
-The package provides a factory function `make`, which configures all language settings and rules for each file types.
+The package provides a factory function that configures all language settings and rules for each file types.
 
 ``` js
-import { make } from "@susisu/eslint-config";
+import { config } from "@susisu/eslint-config";
 
-export default make(
+export default config(
   // options
   {
     // Default sourceType for .js and .ts files  (default: "module")
@@ -66,7 +66,7 @@ export default make(
     // If true, mixes eslint-config-prettier to disable formatting rules (default: true)
     prettier: true,
   },
-  // your flat configs
+  // custom flat configs
   [
     {
       files: ["/path/to/file.js"],
