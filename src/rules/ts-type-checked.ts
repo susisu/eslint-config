@@ -62,6 +62,7 @@ const suggestions: Rules = {
   "@typescript-eslint/no-unsafe-enum-comparison": error,
   "@typescript-eslint/non-nullable-type-assertion-style": off,
   "@typescript-eslint/prefer-destructuring": off,
+  "@typescript-eslint/prefer-find": error,
   "@typescript-eslint/prefer-includes": warn,
   "@typescript-eslint/prefer-nullish-coalescing": off,
   "@typescript-eslint/prefer-promise-reject-errors": [error, { allowEmptyReject: false }],
