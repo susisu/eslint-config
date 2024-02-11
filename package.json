@@ -48,7 +48,7 @@
   },
   "dependencies": {
     "@stylistic/eslint-plugin": "^1.6.1",
-    "@susisu/eslint-plugin-safe-typescript": "^0.5.3",
+    "@susisu/eslint-plugin-safe-typescript": "^0.6.0",
     "@types/eslint-config-prettier": "^6.11.3",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
@@ -59,13 +59,13 @@
     "eslint": "^8.50.0"
   },
   "devDependencies": {
-    "@susisu/eslint-config-stable": "npm:@susisu/eslint-config@^0.0.76",
+    "@susisu/eslint-config-stable": "npm:@susisu/eslint-config@^0.0.77",
     "@vitest/coverage-v8": "^1.2.2",
     "eslint": "^8.56.0",
-    "globals": "^13.24.0",
+    "globals": "^14.0.0",
     "npm-run-all2": "^6.1.2",
     "prettier": "^3.2.5",
-    "tsup": "^8.0.1",
+    "tsup": "^8.0.2",
     "typescript": "~5.3.3",
     "vitest": "^1.2.2"
   }
