@@ -73,7 +73,7 @@ export default config(
       rules: {
         "no-console": "off",
       },
-    }
+    },
   ],
 );
 ```
