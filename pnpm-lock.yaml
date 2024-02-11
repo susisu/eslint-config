@@ -9,8 +9,8 @@ dependencies:
     specifier: ^1.6.1
     version: 1.6.1(eslint@8.56.0)(typescript@5.3.3)
   '@susisu/eslint-plugin-safe-typescript':
-    specifier: ^0.6.0
-    version: 0.6.0(@typescript-eslint/parser@6.21.0)(eslint@8.56.0)(typescript@5.3.3)
+    specifier: ^0.6.1
+    version: 0.6.1(@typescript-eslint/parser@6.21.0)(eslint@8.56.0)(typescript@5.3.3)
   '@types/eslint-config-prettier':
     specifier: ^6.11.3
     version: 6.11.3
@@ -639,8 +639,8 @@ packages:
       - supports-color
     dev: true
 
-  /@susisu/eslint-plugin-safe-typescript@0.6.0(@typescript-eslint/parser@6.21.0)(eslint@8.56.0)(typescript@5.3.3):
-    resolution: {integrity: sha512-6D92b71SBX8BpKg7HrUNeLue5BkI3/YfGAb3Re6ry9oMIggMubUbP24oKmZh0DjQzyFkVLji2ipM9L6+p/UCSQ==}
+  /@susisu/eslint-plugin-safe-typescript@0.6.1(@typescript-eslint/parser@6.21.0)(eslint@8.56.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-ifdOYcBcsj3wrcq0qXBxdgGzduILcCd3vW7tJdtlZ0zliA6gk6vRGpXXZS0KbIQaYjzyHq8mxSiGpL8Quv7jBA==}
     peerDependencies:
       '@typescript-eslint/parser': '>=6.0.0'
       typescript: '*'

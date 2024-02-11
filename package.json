@@ -48,7 +48,7 @@
   },
   "dependencies": {
     "@stylistic/eslint-plugin": "^1.6.1",
-    "@susisu/eslint-plugin-safe-typescript": "^0.6.0",
+    "@susisu/eslint-plugin-safe-typescript": "^0.6.1",
     "@types/eslint-config-prettier": "^6.11.3",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
