@@ -51,7 +51,7 @@ To use a preset, extend it in your eslintrc file.
 
 ## Flat Config (beta)
 
-The package provides a factory function that configures all language settings and rules for each file types.
+The package provides a factory function that configures all language settings and rules for each file type.
 
 ``` js
 import { config } from "@susisu/eslint-config";
