@@ -91,8 +91,9 @@ export function config(options?: ConfigOptions, configs?: FlatESLintConfig[]): F
         ...stylisticRules,
       },
     },
-    // extensions
+    // custom configs
     ...(configs ?? []),
+    // disable formatting rules
     ...(prettier ? [{ rules: prettierConfig.rules }] : []),
   ]);
 }
