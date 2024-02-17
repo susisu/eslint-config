@@ -22,7 +22,7 @@ import { config as tsTypeCheckedConfig } from "./ts-type-checked";
 
 export type ConfigOptions = Readonly<
   Partial<{
-    /** Default sourceType for .js and .ts files  (default: "module") */
+    /** Default sourceType for .js files  (default: "module") */
     sourceType: "script" | "module" | "commonjs";
     /** Set as languageOptions.parserOptions.project for TypeScript files (default: true) */
     tsProject: boolean | string | string[];
@@ -50,19 +50,19 @@ export function config(options?: ConfigOptions, configs?: FlatESLintConfig[]): F
     },
     // language settings
     {
-      files: ["**/*.js", "**/*.{ts,tsx}"],
+      files: ["**/*.js"],
       languageOptions: {
         sourceType,
       },
     },
     {
-      files: ["**/*.cjs", "**/*.{cts,ctsx}"],
+      files: ["**/*.cjs"],
       languageOptions: {
         sourceType: "commonjs",
       },
     },
     {
-      files: ["**/*.mjs", "**/*.{mts,mtsx}"],
+      files: ["**/*.mjs", "**/*.{ts,tsx,cts,ctsx,mts,mtsx}"],
       languageOptions: {
         sourceType: "module",
       },
