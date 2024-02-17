@@ -59,8 +59,8 @@ import { config } from "@susisu/eslint-config";
 export default config(
   // options
   {
-    // Default sourceType for .js and .ts files  (default: "module")
-    sourceType: "module",
+    // Default sourceType for .js files  (default: "module")
+    jsSourceType: "module",
     // Set as languageOptions.parserOptions.project for TypeScript files (default: true)
     tsProject: true,
     // If true, mixes eslint-config-prettier to disable formatting rules (default: true)

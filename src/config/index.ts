@@ -23,7 +23,7 @@ import { config as tsTypeCheckedConfig } from "./ts-type-checked";
 export type ConfigOptions = Readonly<
   Partial<{
     /** Default sourceType for .js files  (default: "module") */
-    sourceType: "script" | "module" | "commonjs";
+    jsSourceType: "script" | "module" | "commonjs";
     /** Set as languageOptions.parserOptions.project for TypeScript files (default: true) */
     tsProject: boolean | string | string[];
     /** If true, mixes eslint-config-prettier to disable formatting rules (default: true) */
@@ -32,7 +32,7 @@ export type ConfigOptions = Readonly<
 >;
 
 export function config(options?: ConfigOptions, configs?: FlatESLintConfig[]): FlatESLintConfig[] {
-  const sourceType = options?.sourceType ?? "module";
+  const jsSourceType = options?.jsSourceType ?? "module";
   const tsProject = options?.tsProject ?? true;
   const prettier = options?.prettier ?? true;
 
@@ -52,7 +52,7 @@ export function config(options?: ConfigOptions, configs?: FlatESLintConfig[]): F
     {
       files: ["**/*.js"],
       languageOptions: {
-        sourceType,
+        sourceType: jsSourceType,
       },
     },
     {
