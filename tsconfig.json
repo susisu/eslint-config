@@ -2,7 +2,7 @@
   "compilerOptions": {
     "noEmit": true,
     "rootDir": "src",
-    "outDir": "dist",
+    "outDir": "lib",
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "bundler",
