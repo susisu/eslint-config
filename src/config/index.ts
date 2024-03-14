@@ -23,11 +23,11 @@ import { config as tsTypeCheckedConfig } from "./ts-type-checked";
 export type ConfigOptions = Readonly<
   Partial<{
     /** Default sourceType for .js files  (default: "module") */
-    jsSourceType: "script" | "module" | "commonjs";
+    jsSourceType: "script" | "module" | "commonjs" | undefined;
     /** Set as languageOptions.parserOptions.project for TypeScript files (default: true) */
-    tsProject: boolean | string | string[];
+    tsProject: boolean | string | string[] | undefined;
     /** If true, mixes eslint-config-prettier to disable formatting rules (default: true) */
-    prettier: boolean;
+    prettier: boolean | undefined;
   }>
 >;
 
