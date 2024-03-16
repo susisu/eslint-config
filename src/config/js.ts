@@ -1,3 +1,4 @@
+import type { ESLint } from "eslint";
 import type { FlatESLintConfig } from "eslint-define-config";
 import { defineFlatConfig } from "eslint-define-config";
 
@@ -11,7 +12,8 @@ export function config(): FlatESLintConfig {
       reportUnusedDisableDirectives: true,
     },
     plugins: {
-      "@stylistic": stylisticPlugin,
+      // eslint-disable-next-line @susisu/safe-typescript/no-type-assertion
+      "@stylistic": stylisticPlugin as ESLint.Plugin,
     },
     rules: {
       ...jsRules,

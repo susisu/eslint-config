@@ -1,3 +1,4 @@
+import type { ESLint } from "eslint";
 import type { FlatESLintConfig } from "eslint-define-config";
 import { defineFlatConfig } from "eslint-define-config";
 
@@ -18,9 +19,11 @@ export function config(): FlatESLintConfig {
       parser: tsEslintParser,
     },
     plugins: {
-      "@typescript-eslint": tsEslintPlugin,
+      // eslint-disable-next-line @susisu/safe-typescript/no-type-assertion
+      "@typescript-eslint": tsEslintPlugin as unknown as ESLint.Plugin,
       "@susisu/safe-typescript": safeTsPlugin,
-      "@stylistic": stylisticPlugin,
+      // eslint-disable-next-line @susisu/safe-typescript/no-type-assertion
+      "@stylistic": stylisticPlugin as ESLint.Plugin,
     },
     rules: {
       ...tsRules,
