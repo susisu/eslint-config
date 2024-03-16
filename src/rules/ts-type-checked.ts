@@ -5,6 +5,7 @@ import { rules as tsRules } from "./ts";
 const { off, warn, error } = levels;
 
 const overrides: Rules = {
+  "consistent-return": off,
   "dot-notation": off,
   "no-implied-eval": off,
   "no-throw-literal": off,
@@ -44,6 +45,7 @@ const possibleProblems: Rules = {
 };
 
 const suggestions: Rules = {
+  "@typescript-eslint/consistent-return": error,
   "@typescript-eslint/consistent-type-exports": off,
   "@typescript-eslint/dot-notation": off,
   "@typescript-eslint/no-base-to-string": warn,
