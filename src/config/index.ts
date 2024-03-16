@@ -21,6 +21,10 @@ import { config as jsConfig } from "./js";
 import { config as tsConfig } from "./ts";
 import { config as tsTypeCheckedConfig } from "./ts-type-checked";
 
+import "@eslint-types/typescript-eslint";
+import "@susisu/eslint-plugin-safe-typescript/define-config-support";
+import "@stylistic/eslint-plugin/define-config-support";
+
 export type ConfigOptions = Readonly<
   Partial<{
     /** Default sourceType for .js files  (default: "module") */
