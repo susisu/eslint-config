@@ -47,7 +47,6 @@
     "configtest:eslintrc": "./configtest/eslintrc/run.sh"
   },
   "dependencies": {
-    "@eslint-types/typescript-eslint": "^7.0.2",
     "@stylistic/eslint-plugin": "^1.7.0",
     "@susisu/eslint-plugin-safe-typescript": "^0.8.0",
     "@types/eslint-config-prettier": "^6.11.3",
