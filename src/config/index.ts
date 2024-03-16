@@ -36,7 +36,10 @@ export type ConfigOptions = Readonly<
   }>
 >;
 
-export function config(options?: ConfigOptions, configs?: FlatESLintConfig[]): FlatESLintConfig[] {
+export function config(
+  options?: ConfigOptions,
+  configs?: readonly FlatESLintConfig[],
+): FlatESLintConfig[] {
   const jsSourceType = options?.jsSourceType ?? "module";
   const tsProject = options?.tsProject ?? true;
   const prettier = options?.prettier ?? true;
