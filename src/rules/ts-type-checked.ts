@@ -83,6 +83,7 @@ const suggestions: Rules = {
     warn,
     { allowDefaultCaseForExhaustiveSwitch: true, requireDefaultForNonUnion: true },
   ],
+  "@typescript-eslint/use-unknown-in-catch-callback-variable": warn,
 };
 
 const layoutAndFormatting: Rules = {};
