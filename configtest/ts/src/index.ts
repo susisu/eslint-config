@@ -29,7 +29,7 @@ export async function foo(): Promise<number> {
 
 foo();
 foo().catch((err) => {
-  const msg = err.toString();
+  const msg = String(err);
   // eslint-disable-next-line no-console
   console.error(msg);
 });
