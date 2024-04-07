@@ -8,6 +8,7 @@ const overrides: Rules = {
   "consistent-return": off,
   "dot-notation": off,
   "no-implied-eval": off,
+  // overridden by @typescript-eslint/only-throw-error
   "no-throw-literal": off,
   "prefer-destructuring": off,
   "prefer-promise-reject-errors": off,
@@ -25,10 +26,6 @@ const possibleProblems: Rules = {
     { checksConditionals: true, checksVoidReturn: true },
   ],
   "@typescript-eslint/no-mixed-enums": warn,
-  "@typescript-eslint/no-throw-literal": [
-    error,
-    { allowThrowingAny: false, allowThrowingUnknown: false },
-  ],
   "@typescript-eslint/no-unsafe-argument": warn,
   "@typescript-eslint/no-unsafe-assignment": warn,
   "@typescript-eslint/no-unsafe-call": warn,
@@ -36,6 +33,10 @@ const possibleProblems: Rules = {
   "@typescript-eslint/no-unsafe-return": warn,
   "@typescript-eslint/no-unsafe-unary-minus": error,
   "@typescript-eslint/no-useless-template-literals": error,
+  "@typescript-eslint/only-throw-error": [
+    error,
+    { allowThrowingAny: false, allowThrowingUnknown: false },
+  ],
   "@typescript-eslint/prefer-reduce-type-parameter": error,
   "@typescript-eslint/require-array-sort-compare": off,
   "@typescript-eslint/restrict-plus-operands": warn,
