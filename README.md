@@ -1,6 +1,6 @@
 # @susisu/eslint-config
 
-[![CI](https://github.com/susisu/eslint-config/workflows/CI/badge.svg)](https://github.com/susisu/eslint-config/actions?query=workflow%3ACI)
+[![CI](https://github.com/susisu/eslint-config/actions/workflows/ci.yml/badge.svg)](https://github.com/susisu/eslint-config/actions/workflows/ci.yml)
 
 ## Requirements
 
