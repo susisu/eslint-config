@@ -61,7 +61,8 @@ const suggestions: Rules = {
   "@typescript-eslint/no-unnecessary-condition": [warn, { allowConstantLoopConditions: true }],
   "@typescript-eslint/no-unnecessary-qualifier": off,
   "@typescript-eslint/no-unnecessary-type-arguments": off,
-  "@typescript-eslint/no-unnecessary-type-assertion": error,
+  // allow `as const` to disallow widening
+  "@typescript-eslint/no-unnecessary-type-assertion": [error, { typesToIgnore: "const" }],
   "@typescript-eslint/no-unsafe-enum-comparison": error,
   "@typescript-eslint/non-nullable-type-assertion-style": off,
   "@typescript-eslint/prefer-destructuring": off,
