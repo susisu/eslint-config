@@ -12,8 +12,8 @@ importers:
         specifier: ^2.2.2
         version: 2.2.2(eslint@8.57.0)(typescript@5.4.5)
       '@susisu/eslint-plugin-safe-typescript':
-        specifier: ^0.8.1
-        version: 0.8.1(@typescript-eslint/parser@7.13.1(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5)
+        specifier: ^0.8.2
+        version: 0.8.2(@typescript-eslint/parser@7.13.1(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5)
       '@types/eslint':
         specifier: ^8.56.10
         version: 8.56.10
@@ -419,8 +419,8 @@ packages:
     peerDependencies:
       eslint: ^8.56.0
 
-  '@susisu/eslint-plugin-safe-typescript@0.8.1':
-    resolution: {integrity: sha512-w31t8NN9rV6V69ORbckDIhqr2DXq/9MZZGt4QEr9JCTYfs9ffqhjZpR+rduUqKpUBJ+lqCnp59YLVTA7az/X4g==}
+  '@susisu/eslint-plugin-safe-typescript@0.8.2':
+    resolution: {integrity: sha512-XtR6z1BOBcLC7/TugEjjXKqek7NE6Lq5SrLW4TLcJEbZU2a9Rl+e5jg7UJdJzP/aP5ZISWRaLXimwhJA7eOJRg==}
     peerDependencies:
       '@typescript-eslint/parser': ^7.0.0
       typescript: '*'
@@ -1791,7 +1791,7 @@ snapshots:
   '@susisu/eslint-config@0.0.82(eslint@8.57.0)(typescript@5.4.5)':
     dependencies:
       '@stylistic/eslint-plugin': 2.2.2(eslint@8.57.0)(typescript@5.4.5)
-      '@susisu/eslint-plugin-safe-typescript': 0.8.1(@typescript-eslint/parser@7.13.1(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5)
+      '@susisu/eslint-plugin-safe-typescript': 0.8.2(@typescript-eslint/parser@7.13.1(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5)
       '@types/eslint': 8.56.10
       '@types/eslint-config-prettier': 6.11.3
       '@typescript-eslint/eslint-plugin': 7.13.1(@typescript-eslint/parser@7.13.1(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5)
@@ -1804,7 +1804,7 @@ snapshots:
       - typescript
       - typescript-eslint
 
-  '@susisu/eslint-plugin-safe-typescript@0.8.1(@typescript-eslint/parser@7.13.1(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5)':
+  '@susisu/eslint-plugin-safe-typescript@0.8.2(@typescript-eslint/parser@7.13.1(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5)':
     dependencies:
       '@types/eslint': 8.56.10
       '@typescript-eslint/utils': 7.13.1(eslint@8.57.0)(typescript@5.4.5)
