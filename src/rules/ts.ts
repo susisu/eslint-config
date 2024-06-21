@@ -77,7 +77,6 @@ const possibleProblems: Rules = {
   // disabled because @typescript-eslint/no-require-imports forbids requires more strictly
   "@typescript-eslint/no-var-requires": off,
   "@typescript-eslint/parameter-properties": off,
-  "@typescript-eslint/prefer-ts-expect-error": error,
 };
 
 const suggestions: Rules = {
