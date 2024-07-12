@@ -137,7 +137,7 @@ const suggestions: Rules = {
     },
     {
       selector: ["objectLiteralProperty", "typeProperty", "objectLiteralMethod", "typeMethod"],
-      format: ["camelCase", "PascalCase", "UPPER_CASE"],
+      format: ["camelCase", "PascalCase", "snake_case", "UPPER_CASE"],
       leadingUnderscore: "allow",
       trailingUnderscore: "allow",
     },
