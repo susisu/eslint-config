@@ -119,12 +119,14 @@ const suggestions: Rules = {
     warn,
     {
       selector: "variableLike",
+      // allow PascalCase as it is commonly used for classes and React components
       format: ["camelCase", "PascalCase"],
       leadingUnderscore: "allow",
       trailingUnderscore: "allow",
     },
     {
       selector: "variable",
+      // allow UPPER_CASE as it is commonly used for constants
       format: ["camelCase", "PascalCase", "UPPER_CASE"],
       leadingUnderscore: "allow",
       trailingUnderscore: "allow",
@@ -136,7 +138,9 @@ const suggestions: Rules = {
       trailingUnderscore: "allow",
     },
     {
+      // classProperty and classMethod are excluded because they will not be affected by external systems or packages
       selector: ["objectLiteralProperty", "typeProperty", "objectLiteralMethod", "typeMethod"],
+      // allow any common format because property and method names could be defined by external systems or packages
       format: ["camelCase", "PascalCase", "snake_case", "UPPER_CASE"],
       leadingUnderscore: "allow",
       trailingUnderscore: "allow",
@@ -148,6 +152,7 @@ const suggestions: Rules = {
     },
     {
       selector: "import",
+      // allow any common format because import names could be defined by external packages
       format: ["camelCase", "PascalCase", "snake_case", "UPPER_CASE"],
       leadingUnderscore: "allow",
       trailingUnderscore: "allow",
