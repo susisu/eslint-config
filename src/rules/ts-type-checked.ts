@@ -27,6 +27,8 @@ const possibleProblems: Rules = {
   ],
   "@typescript-eslint/no-mixed-enums": warn,
   "@typescript-eslint/no-unnecessary-template-expression": error,
+  // to be tested
+  "@typescript-eslint/no-unnecessary-type-parameters": off,
   "@typescript-eslint/no-unsafe-argument": warn,
   "@typescript-eslint/no-unsafe-assignment": warn,
   "@typescript-eslint/no-unsafe-call": warn,
@@ -70,7 +72,7 @@ const suggestions: Rules = {
   "@typescript-eslint/prefer-includes": warn,
   "@typescript-eslint/prefer-nullish-coalescing": off,
   "@typescript-eslint/prefer-promise-reject-errors": [error, { allowEmptyReject: false }],
-  // to be investigated
+  // to be tested
   "@typescript-eslint/prefer-readonly": off,
   "@typescript-eslint/prefer-readonly-parameter-types": off,
   "@typescript-eslint/prefer-regexp-exec": warn,
