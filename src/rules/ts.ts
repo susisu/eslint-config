@@ -186,6 +186,7 @@ const suggestions: Rules = {
   "@typescript-eslint/no-restricted-imports": off,
   "@typescript-eslint/no-shadow": off,
   "@typescript-eslint/no-this-alias": [error, { allowDestructuring: true }],
+  "@typescript-eslint/no-unnecessary-parameter-property-assignment": error,
   "@typescript-eslint/no-unnecessary-type-constraint": off,
   "@typescript-eslint/no-unused-expressions": [error, { enforceForJSX: true }],
   "@typescript-eslint/no-useless-empty-export": warn,
