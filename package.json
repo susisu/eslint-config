@@ -51,8 +51,8 @@
     "@susisu/eslint-plugin-safe-typescript": "^0.8.3",
     "@types/eslint": "^8.56.10",
     "@types/eslint-config-prettier": "^6.11.3",
-    "@typescript-eslint/eslint-plugin": "^7.15.0",
-    "@typescript-eslint/parser": "^7.15.0",
+    "@typescript-eslint/eslint-plugin": "^7.16.0",
+    "@typescript-eslint/parser": "^7.16.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-define-config": "^2.1.0"
   },
@@ -60,14 +60,14 @@
     "eslint": "^8.56.0"
   },
   "devDependencies": {
-    "@susisu/eslint-config-stable": "npm:@susisu/eslint-config@^0.0.83",
-    "@vitest/coverage-v8": "^1.6.0",
+    "@susisu/eslint-config-stable": "npm:@susisu/eslint-config@^0.0.84",
+    "@vitest/coverage-v8": "^2.0.2",
     "eslint": "^8.57.0",
     "globals": "^15.8.0",
     "npm-run-all2": "^6.2.2",
     "prettier": "^3.3.2",
     "tsup": "^8.1.0",
     "typescript": "~5.5.3",
-    "vitest": "^1.6.0"
+    "vitest": "^2.0.2"
   }
 }
