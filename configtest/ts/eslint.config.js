@@ -1,7 +1,7 @@
 import { config } from "@susisu/eslint-config";
 import globals from "globals";
 
-export default config({ tsProject: false }, [
+export default config({ tsProjectService: false }, [
   {
     languageOptions: {
       globals: {

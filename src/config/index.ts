@@ -21,11 +21,18 @@ import { config as tsTypeCheckedConfig } from "./ts-type-checked";
 
 export type ConfigOptions = Readonly<
   Partial<{
-    /** Default sourceType for .js files  (default: "module") */
+    /** Default sourceType for .js files.  (default: "module") */
     jsSourceType: "script" | "module" | "commonjs" | undefined;
-    /** Set as languageOptions.parserOptions.project for TypeScript files (default: true) */
-    tsProject: boolean | string | string[] | undefined;
-    /** If true, mixes eslint-config-prettier to disable formatting rules (default: true) */
+    /**
+     * Set languageOptions.parserOptions.projectService for TypeScript files. (default: true)
+     */
+    tsProjectService: tsEslintParser.ParserOptions["projectService"] | undefined;
+    /**
+     * Set languageOptions.parserOptions.project for TypeScript files. (default: false)
+     * @deprecated Use tsProjectService instead.
+     */
+    tsProject: tsEslintParser.ParserOptions["project"] | undefined;
+    /** If true, mixes eslint-config-prettier to disable formatting rules. (default: true) */
     prettier: boolean | undefined;
   }>
 >;
@@ -35,7 +42,8 @@ export function config(
   configs?: readonly Linter.Config[],
 ): Linter.Config[] {
   const jsSourceType = options?.jsSourceType ?? "module";
-  const tsProject = options?.tsProject ?? true;
+  const tsProjectService = options?.tsProjectService ?? true;
+  const tsProject = options?.tsProject ?? false;
   const prettier = options?.prettier ?? true;
 
   return [
@@ -75,7 +83,9 @@ export function config(
       languageOptions: {
         parser: tsEslintParser,
         parserOptions: {
-          ...(tsProject ? { project: tsProject } : {}),
+          ...(tsProjectService ? { projectService: tsProjectService }
+          : tsProject ? { project: tsProject }
+          : {}),
         },
       },
     },
@@ -90,7 +100,7 @@ export function config(
     {
       files: ["**/*.{ts,tsx,cts,ctsx,mts,mtsx}"],
       rules: {
-        ...(tsProject ? tsTypeCheckedRules : tsRules),
+        ...(tsProjectService || tsProject ? tsTypeCheckedRules : tsRules),
         ...stylisticRules,
       },
     },
