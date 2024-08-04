@@ -25,11 +25,12 @@ export type ConfigOptions = Readonly<
     jsSourceType: "script" | "module" | "commonjs" | undefined;
     /**
      * Set languageOptions.parserOptions.projectService for TypeScript files. (default: true)
+     * If both `tsProjectService` and `tsProject` are enabled, only `tsProjectService` will have effect.
      */
     tsProjectService: tsEslintParser.ParserOptions["projectService"] | undefined;
     /**
      * Set languageOptions.parserOptions.project for TypeScript files. (default: false)
-     * @deprecated Use tsProjectService instead.
+     * If both `tsProjectService` and `tsProject` are enabled, only `tsProjectService` will have effect.
      */
     tsProject: tsEslintParser.ParserOptions["project"] | undefined;
     /** If true, mixes eslint-config-prettier to disable formatting rules. (default: true) */
