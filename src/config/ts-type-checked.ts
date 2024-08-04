@@ -20,8 +20,7 @@ export function config(): Linter.Config {
       // eslint-disable-next-line @susisu/safe-typescript/no-type-assertion
       "@typescript-eslint": tsEslintPlugin as unknown as ESLint.Plugin,
       "@susisu/safe-typescript": safeTsPlugin,
-      // eslint-disable-next-line @susisu/safe-typescript/no-type-assertion
-      "@stylistic": stylisticPlugin as ESLint.Plugin,
+      "@stylistic": stylisticPlugin,
     },
     rules: {
       ...tsTypeCheckedRules,

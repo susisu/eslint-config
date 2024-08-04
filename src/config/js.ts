@@ -1,4 +1,4 @@
-import type { ESLint, Linter } from "eslint";
+import type { Linter } from "eslint";
 
 import stylisticPlugin from "@stylistic/eslint-plugin";
 
@@ -10,8 +10,7 @@ export function config(): Linter.Config {
       reportUnusedDisableDirectives: true,
     },
     plugins: {
-      // eslint-disable-next-line @susisu/safe-typescript/no-type-assertion
-      "@stylistic": stylisticPlugin as ESLint.Plugin,
+      "@stylistic": stylisticPlugin,
     },
     rules: {
       ...jsRules,
