@@ -2,6 +2,7 @@
 
 const { __internal__rules: rules } = require("../lib/index.cjs");
 
+/** @deprecated */
 module.exports = {
   reportUnusedDisableDirectives: true,
   parser: "@typescript-eslint/parser",
