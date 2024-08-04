@@ -15,7 +15,7 @@ const possibleProblems: Rules = {
   "no-cond-assign": [warn, "always"],
   "no-const-assign": error,
   "no-constant-binary-expression": error,
-  "no-constant-condition": [warn, { checkLoops: false }],
+  "no-constant-condition": warn,
   "no-constructor-return": error,
   "no-control-regex": off,
   "no-debugger": error,
