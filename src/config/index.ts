@@ -49,6 +49,7 @@ export function config(
   return [
     // linter settings
     {
+      name: "@susisu/eslint-config/linter-settings",
       linterOptions: {
         reportUnusedDisableDirectives: true,
       },
@@ -61,26 +62,31 @@ export function config(
     },
     // language settings
     {
+      name: "@susisu/eslint-config/language-settings/js",
       files: ["**/*.js"],
       languageOptions: {
         sourceType: jsSourceType,
       },
     },
     {
+      name: "@susisu/eslint-config/language-settings/cjs",
       files: ["**/*.cjs"],
       languageOptions: {
         sourceType: "commonjs",
       },
     },
     {
-      files: ["**/*.mjs", "**/*.{ts,tsx,cts,ctsx,mts,mtsx}"],
+      name: "@susisu/eslint-config/language-settings/mjs",
+      files: ["**/*.mjs"],
       languageOptions: {
         sourceType: "module",
       },
     },
     {
+      name: "@susisu/eslint-config/language-settings/ts",
       files: ["**/*.{ts,tsx,cts,ctsx,mts,mtsx}"],
       languageOptions: {
+        sourceType: "module",
         parser: tsEslintParser,
         parserOptions: {
           ...(tsProjectService ? { projectService: tsProjectService }
@@ -89,8 +95,9 @@ export function config(
         },
       },
     },
-    // rules
+    // rule settings
     {
+      name: "@susisu/eslint-config/rule-settings/js",
       files: ["**/*.{js,cjs,mjs}"],
       rules: {
         ...jsRules,
@@ -98,6 +105,7 @@ export function config(
       },
     },
     {
+      name: "@susisu/eslint-config/rule-settings/ts",
       files: ["**/*.{ts,tsx,cts,ctsx,mts,mtsx}"],
       rules: {
         ...(tsProjectService || tsProject ? tsTypeCheckedRules : tsRules),
@@ -107,7 +115,14 @@ export function config(
     // custom configs
     ...(configs ?? []),
     // disable formatting rules
-    ...(prettier ? [{ rules: prettierConfig.rules }] : []),
+    ...(prettier ?
+      [
+        {
+          name: "@susisu/eslint-config/prettier",
+          rules: prettierConfig.rules,
+        },
+      ]
+    : []),
   ];
 }
 

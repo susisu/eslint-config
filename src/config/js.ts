@@ -6,6 +6,7 @@ import { js as jsRules, stylistic as stylisticRules } from "../rules";
 
 export function config(): Linter.Config {
   return {
+    name: "@susisu/eslint-config/js",
     linterOptions: {
       reportUnusedDisableDirectives: true,
     },

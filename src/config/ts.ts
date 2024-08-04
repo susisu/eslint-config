@@ -10,6 +10,7 @@ import { ts as tsRules, stylistic as stylisticRules } from "../rules";
 
 export function config(): Linter.Config {
   return {
+    name: "@susisu/eslint-config/ts",
     linterOptions: {
       reportUnusedDisableDirectives: true,
     },

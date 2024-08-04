@@ -10,6 +10,7 @@ import { tsTypeChecked as tsTypeCheckedRules, stylistic as stylisticRules } from
 
 export function config(): Linter.Config {
   return {
+    name: "@susisu/eslint-config/ts-type-checked",
     linterOptions: {
       reportUnusedDisableDirectives: true,
     },
