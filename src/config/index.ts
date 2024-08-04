@@ -22,7 +22,7 @@ import { config as tsTypeCheckedConfig } from "./ts-type-checked";
 export type ConfigOptions = Readonly<
   Partial<{
     /** Default sourceType for .js files.  (default: "module") */
-    jsSourceType: "script" | "module" | "commonjs" | undefined;
+    jsSourceType: Linter.SourceType | undefined;
     /**
      * Set languageOptions.parserOptions.projectService for TypeScript files. (default: true)
      * If both `tsProjectService` and `tsProject` are enabled, only `tsProjectService` will have effect.
