@@ -109,7 +109,6 @@ const suggestions: Rules = {
   "max-nested-callbacks": off,
   "max-params": off,
   "max-statements": off,
-  "multiline-comment-style": off,
   "new-cap": [error, { capIsNewExceptions: ["BigInt"] }],
   "no-alert": error,
   "no-array-constructor": error,
@@ -223,7 +222,6 @@ const suggestions: Rules = {
 };
 
 const layoutAndFormatting: Rules = {
-  "line-comment-position": off,
   "unicode-bom": [error, "never"],
 };
 
