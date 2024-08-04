@@ -131,7 +131,7 @@ const suggestions: Rules = {
   "no-extra-boolean-cast": [error, { enforceForLogicalOperands: true }],
   "no-extra-label": error,
   "no-global-assign": error,
-  // `!!` is exceptionally allowed because it is a very frequently used pattern
+  // `!!` is allowed because it is frequently used
   "no-implicit-coercion": [error, { allow: ["!!"] }],
   "no-implicit-globals": [error, { lexicalBindings: true }],
   "no-implied-eval": error,
