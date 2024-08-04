@@ -37,7 +37,6 @@ export default config(
     // If both `tsProjectService` and `tsProject` are enabled, only `tsProjectService` will have effect.
     tsProjectService: true,
     // Set languageOptions.parserOptions.project for TypeScript files. (default: false)
-    // If both `tsProjectService` and `tsProject` are enabled, only `tsProjectService` will have effect.
     tsProject: false,
     // If true, mixes eslint-config-prettier to disable formatting rules. (default: true)
     prettier: true,
