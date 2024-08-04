@@ -4,7 +4,7 @@
 
 ## Requirements
 
-- eslint >= 8.56.0 < 9
+- eslint >= 9.3.0 < 10
 
 ## Installation
 
@@ -21,7 +21,40 @@ pnpm add -D eslint @susisu/eslint-config
 
 *NOTE: Formatting rules are not enabled. I recommend using [Prettier](https://prettier.io).*
 
-## eslintrc
+## Flat Config
+
+The package provides a factory function that configures all language settings and rules for each file type.
+
+``` js
+import { config } from "@susisu/eslint-config";
+
+export default config(
+  // options
+  {
+    // Default sourceType for .js files.  (default: "module")
+    jsSourceType: "module",
+    // Set languageOptions.parserOptions.projectService for TypeScript files. (default: true)
+    // If both `tsProjectService` and `tsProject` are enabled, only `tsProjectService` will have effect.
+    tsProjectService: true,
+    // Set languageOptions.parserOptions.project for TypeScript files. (default: false)
+    // If both `tsProjectService` and `tsProject` are enabled, only `tsProjectService` will have effect.
+    tsProject: false,
+    // If true, mixes eslint-config-prettier to disable formatting rules. (default: true)
+    prettier: true,
+  },
+  // custom flat configs
+  [
+    {
+      files: ["/path/to/file.js"],
+      rules: {
+        "no-console": "off",
+      },
+    },
+  ],
+);
+```
+
+## eslintrc (deprecated)
 
 There are three preset configurations for JavaScript and TypeScript:
 
@@ -47,35 +80,6 @@ To use a preset, extend it in your eslintrc file.
     }
   ]
 }
-```
-
-## Flat Config (beta)
-
-The package provides a factory function that configures all language settings and rules for each file type.
-
-``` js
-import { config } from "@susisu/eslint-config";
-
-export default config(
-  // options
-  {
-    // Default sourceType for .js files  (default: "module")
-    jsSourceType: "module",
-    // Set as languageOptions.parserOptions.project for TypeScript files (default: true)
-    tsProject: true,
-    // If true, mixes eslint-config-prettier to disable formatting rules (default: true)
-    prettier: true,
-  },
-  // custom flat configs
-  [
-    {
-      files: ["/path/to/file.js"],
-      rules: {
-        "no-console": "off",
-      },
-    },
-  ],
-);
 ```
 
 ## Error levels
