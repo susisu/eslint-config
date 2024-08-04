@@ -167,7 +167,7 @@ const suggestions: Rules = {
   "no-restricted-syntax": off,
   "no-return-assign": error,
   "no-script-url": off,
-  "no-sequences": error,
+  "no-sequences": [error, { allowInParentheses: false }],
   "no-shadow": off,
   "no-shadow-restricted-names": error,
   "no-ternary": off,
