@@ -74,8 +74,6 @@ const possibleProblems: Rules = {
     { functions: false, typedefs: false, allowNamedExports: true },
   ],
   "@typescript-eslint/no-useless-constructor": error,
-  // disabled because @typescript-eslint/no-require-imports forbids requires more strictly
-  "@typescript-eslint/no-var-requires": off,
   "@typescript-eslint/parameter-properties": off,
 };
 
