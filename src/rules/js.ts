@@ -131,7 +131,7 @@ const suggestions: Rules = {
   "no-extra-boolean-cast": [error, { enforceForLogicalOperands: true }],
   "no-extra-label": error,
   "no-global-assign": error,
-  // `!!` is exceptionally allowed because it is a very frequently used pattern
+  // `!!` is allowed because it is frequently used
   "no-implicit-coercion": [error, { allow: ["!!"] }],
   "no-implicit-globals": [error, { lexicalBindings: true }],
   "no-implied-eval": error,
@@ -167,7 +167,7 @@ const suggestions: Rules = {
   "no-restricted-syntax": off,
   "no-return-assign": error,
   "no-script-url": off,
-  "no-sequences": error,
+  "no-sequences": [error, { allowInParentheses: false }],
   "no-shadow": off,
   "no-shadow-restricted-names": error,
   "no-ternary": off,
@@ -181,7 +181,7 @@ const suggestions: Rules = {
   "no-unused-labels": error,
   "no-useless-call": error,
   "no-useless-catch": error,
-  "no-useless-computed-key": [error, { enforceForClassMembers: true }],
+  "no-useless-computed-key": error,
   "no-useless-concat": error,
   "no-useless-constructor": error,
   "no-useless-escape": error,
