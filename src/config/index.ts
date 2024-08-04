@@ -1,6 +1,4 @@
-import type { ESLint } from "eslint";
-import type { FlatESLintConfig } from "eslint-define-config";
-import { defineFlatConfig } from "eslint-define-config";
+import type { ESLint, Linter } from "eslint";
 
 import tsEslintParser from "@typescript-eslint/parser";
 
@@ -34,13 +32,13 @@ export type ConfigOptions = Readonly<
 
 export function config(
   options?: ConfigOptions,
-  configs?: readonly FlatESLintConfig[],
-): FlatESLintConfig[] {
+  configs?: readonly Linter.Config[],
+): Linter.Config[] {
   const jsSourceType = options?.jsSourceType ?? "module";
   const tsProject = options?.tsProject ?? true;
   const prettier = options?.prettier ?? true;
 
-  return defineFlatConfig([
+  return [
     // linter settings
     {
       linterOptions: {
@@ -101,7 +99,7 @@ export function config(
     ...(configs ?? []),
     // disable formatting rules
     ...(prettier ? [{ rules: prettierConfig.rules }] : []),
-  ]);
+  ];
 }
 
 config.js = jsConfig;

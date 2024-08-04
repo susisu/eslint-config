@@ -1,13 +1,11 @@
-import type { ESLint } from "eslint";
-import type { FlatESLintConfig } from "eslint-define-config";
-import { defineFlatConfig } from "eslint-define-config";
+import type { ESLint, Linter } from "eslint";
 
 import stylisticPlugin from "@stylistic/eslint-plugin";
 
 import { js as jsRules, stylistic as stylisticRules } from "../rules";
 
-export function config(): FlatESLintConfig {
-  return defineFlatConfig({
+export function config(): Linter.Config {
+  return {
     linterOptions: {
       reportUnusedDisableDirectives: true,
     },
@@ -19,5 +17,5 @@ export function config(): FlatESLintConfig {
       ...jsRules,
       ...stylisticRules,
     },
-  });
+  };
 }
