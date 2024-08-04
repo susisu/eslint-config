@@ -57,6 +57,7 @@ const possibleProblems: Rules = {
   "@typescript-eslint/no-non-null-assertion": warn,
   "@typescript-eslint/no-require-imports": error,
   "@typescript-eslint/no-unsafe-declaration-merging": error,
+  "@typescript-eslint/no-unsafe-function-type": error,
   "@typescript-eslint/no-unused-vars": [
     error,
     {
@@ -72,6 +73,7 @@ const possibleProblems: Rules = {
     { functions: false, typedefs: false, allowNamedExports: true },
   ],
   "@typescript-eslint/no-useless-constructor": error,
+  "@typescript-eslint/no-wrapper-object-types": error,
   "@typescript-eslint/parameter-properties": off,
 };
 
@@ -79,20 +81,6 @@ const suggestions: Rules = {
   "@typescript-eslint/adjacent-overload-signatures": error,
   "@typescript-eslint/array-type": [error, { default: "array-simple", readonly: "array-simple" }],
   "@typescript-eslint/ban-tslint-comment": off,
-  "@typescript-eslint/ban-types": [
-    error,
-    {
-      extendDefaults: true,
-      types: {
-        Object: { message: "Use object instead", fixWith: "object" },
-        // `{}` means "any non-nullish value", which includes `string`, `number`, etc.
-        // `{ toString: () => string }` means "any non-nullish value with `toString`",
-        // which also includes `string`, `number`, etc.
-        // I don't know why only `{}` is banned.
-        "{}": false,
-      },
-    },
-  ],
   "@typescript-eslint/class-methods-use-this": off,
   "@typescript-eslint/consistent-generic-constructors": off,
   "@typescript-eslint/consistent-indexed-object-style": off,
@@ -180,6 +168,7 @@ const suggestions: Rules = {
   ],
   "@typescript-eslint/no-redeclare": error,
   "@typescript-eslint/no-restricted-imports": off,
+  "@typescript-eslint/no-restricted-types": off,
   "@typescript-eslint/no-shadow": off,
   "@typescript-eslint/no-this-alias": [error, { allowDestructuring: true }],
   "@typescript-eslint/no-unnecessary-parameter-property-assignment": error,
