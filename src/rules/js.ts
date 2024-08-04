@@ -127,7 +127,7 @@ const suggestions: Rules = {
   "no-eval": error,
   "no-extend-native": error,
   "no-extra-bind": error,
-  "no-extra-boolean-cast": [error, { enforceForLogicalOperands: true }],
+  "no-extra-boolean-cast": [error, { enforceForInnerExpressions: true }],
   "no-extra-label": error,
   "no-global-assign": error,
   // `!!` is allowed because it is frequently used
