@@ -21,6 +21,8 @@ import { config as tsTypeCheckedConfig } from "./ts-type-checked";
 
 export type ConfigOptions = Readonly<
   Partial<{
+    /** Enable recommended rules. (default: true) */
+    recommendedRules: boolean | undefined;
     /** Default sourceType for .js files.  (default: "module") */
     jsSourceType: Linter.SourceType | undefined;
     /**
@@ -42,6 +44,7 @@ export function config(
   options?: ConfigOptions,
   configs?: readonly Linter.Config[],
 ): Linter.Config[] {
+  const recommendedRules = options?.recommendedRules ?? true;
   const jsSourceType = options?.jsSourceType ?? "module";
   const tsProjectService = options?.tsProjectService ?? true;
   const tsProject = options?.tsProject ?? false;
@@ -97,22 +100,26 @@ export function config(
       },
     },
     // rule settings
-    {
-      name: "@susisu/eslint-config/rule-settings/js",
-      files: ["**/*.{js,cjs,mjs}"],
-      rules: {
-        ...jsRules,
-        ...stylisticRules,
-      },
-    },
-    {
-      name: "@susisu/eslint-config/rule-settings/ts",
-      files: ["**/*.{ts,tsx,cts,ctsx,mts,mtsx}"],
-      rules: {
-        ...(tsProjectService || tsProject ? tsTypeCheckedRules : tsRules),
-        ...stylisticRules,
-      },
-    },
+    ...(recommendedRules ?
+      [
+        {
+          name: "@susisu/eslint-config/rule-settings/js",
+          files: ["**/*.{js,cjs,mjs}"],
+          rules: {
+            ...jsRules,
+            ...stylisticRules,
+          },
+        },
+        {
+          name: "@susisu/eslint-config/rule-settings/ts",
+          files: ["**/*.{ts,tsx,cts,ctsx,mts,mtsx}"],
+          rules: {
+            ...(tsProjectService || tsProject ? tsTypeCheckedRules : tsRules),
+            ...stylisticRules,
+          },
+        },
+      ]
+    : []),
     // custom configs
     ...(configs ?? []),
     // disable formatting rules

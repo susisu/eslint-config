@@ -31,6 +31,8 @@ import { config } from "@susisu/eslint-config";
 export default config(
   // options
   {
+    // Enable recommended rules. (default: true)
+    recommendedRules: boolean | undefined;
     // Default sourceType for .js files.  (default: "module")
     jsSourceType: "module",
     // Set languageOptions.parserOptions.projectService for TypeScript files. (default: true)
