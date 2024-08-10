@@ -53,6 +53,24 @@ export default config(
 );
 ```
 
+### What does `config()` do?
+
+- Set linter options
+  - Enable `reportUnusedDisableDirectives`
+- Install plugins
+  - [typescript-eslint](https://typescript-eslint.io) (rule prefix: `@typescript-eslint/*`)
+  - [ESLint Stylistic](https://eslint.style) (rule prefix: `@stylistic/*`)
+  - [eslint-plugin-safe-typescript](https://github.com/susisu/eslint-plugin-safe-typescript) (rule prefix: `@susisu/safe-typescript/*`)
+- Set language options for JS and TS files
+  - Set `sourceType: "module"` for .js, .mjs, .ts, .tsx, .cts, .ctsx, .mts, .mtsx
+  - Set `sourceType: "commonjs"` for .cjs
+  - Enable typescript-eslint parser and typed linting for TS files
+- Enable recommended rules
+- Apply custom configs
+- Disable rules that can conflict with Prettier
+
+See [the source code](https://github.com/susisu/eslint-config/blob/master/src/config/index.ts) for more details.
+
 ## eslintrc (deprecated)
 
 There are three preset configurations for JavaScript and TypeScript:
