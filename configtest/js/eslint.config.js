@@ -5,7 +5,7 @@ export default config({ tsProjectService: false }, [
   {
     languageOptions: {
       globals: {
-        ...globals.es2021,
+        ...globals.es2023,
         ...globals.node,
       },
     },
