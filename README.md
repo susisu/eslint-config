@@ -32,7 +32,7 @@ export default config(
   // options
   {
     // Enable recommended rules. (default: true)
-    recommendedRules: boolean | undefined;
+    recommendedRules: true,
     // Default sourceType for .js files.  (default: "module")
     jsSourceType: "module",
     // Set languageOptions.parserOptions.projectService for TypeScript files. (default: true)
