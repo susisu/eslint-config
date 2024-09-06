@@ -40,6 +40,8 @@ export default config(
     tsProjectService: true,
     // Set languageOptions.parserOptions.project for TypeScript files. (default: false)
     tsProject: false,
+    // Set languageOptions.parserOptions.tsconfigRootDir for TypeScript files. (default: undefined)
+    tsconfigRootDir: undefined,
     // If true, mixes eslint-config-prettier to disable formatting rules. (default: true)
     prettier: true,
   },

@@ -35,6 +35,8 @@ export type ConfigOptions = Readonly<
      * If both `tsProjectService` and `tsProject` are enabled, only `tsProjectService` will have effect.
      */
     tsProject: tsEslintParser.ParserOptions["project"] | undefined;
+    /** Set languageOptions.parserOptions.tsconfigRootDir for TypeScript files. (default: undefined) */
+    tsconfigRootDir: tsEslintParser.ParserOptions["tsconfigRootDir"] | undefined;
     /** If true, mixes eslint-config-prettier to disable formatting rules. (default: true) */
     prettier: boolean | undefined;
   }>
@@ -48,6 +50,7 @@ export function config(
   const jsSourceType = options?.jsSourceType ?? "module";
   const tsProjectService = options?.tsProjectService ?? true;
   const tsProject = options?.tsProject ?? false;
+  const tsconfigRootDir = options?.tsconfigRootDir ?? undefined;
   const prettier = options?.prettier ?? true;
 
   return [
@@ -96,6 +99,7 @@ export function config(
           ...(tsProjectService ? { projectService: tsProjectService }
           : tsProject ? { project: tsProject }
           : {}),
+          tsconfigRootDir,
         },
       },
     },
