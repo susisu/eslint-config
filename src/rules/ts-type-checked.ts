@@ -19,6 +19,7 @@ const possibleProblems: Rules = {
   "@typescript-eslint/await-thenable": error,
   "@typescript-eslint/no-array-delete": error,
   "@typescript-eslint/no-confusing-void-expression": [error, { ignoreArrowShorthand: true }],
+  "@typescript-eslint/no-deprecated": warn,
   "@typescript-eslint/no-floating-promises": [warn, { ignoreVoid: false }],
   "@typescript-eslint/no-for-in-array": warn,
   "@typescript-eslint/no-misused-promises": [
