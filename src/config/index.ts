@@ -19,6 +19,9 @@ import { config as jsConfig } from "./js";
 import { config as tsConfig } from "./ts";
 import { config as tsTypeCheckedConfig } from "./ts-type-checked";
 
+import type { ConfigWithExtends } from "../utils";
+import { expand } from "../utils";
+
 export type ConfigOptions = Readonly<
   Partial<{
     /** Enable recommended rules. (default: true) */
@@ -44,7 +47,7 @@ export type ConfigOptions = Readonly<
 
 export function config(
   options?: ConfigOptions,
-  configs?: readonly Linter.Config[],
+  configs?: readonly ConfigWithExtends[],
 ): Linter.Config[] {
   const recommendedRules = options?.recommendedRules ?? true;
   const jsSourceType = options?.jsSourceType ?? "module";
@@ -125,7 +128,7 @@ export function config(
       ]
     : []),
     // custom configs
-    ...(configs ?? []),
+    ...expand(configs ?? []),
     // disable formatting rules
     ...(prettier ?
       [
