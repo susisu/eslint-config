@@ -21,15 +21,25 @@ pnpm add -D eslint @susisu/eslint-config
 
 *NOTE: Formatting rules are not enabled. I recommend using [Prettier](https://prettier.io).*
 
-## Flat Config
+### Flat Config
 
 The package provides a factory function that configures all language settings and rules for each file type.
+
+#### Minimum setup
 
 ``` js
 import { config } from "@susisu/eslint-config";
 
+export default config({
+  tsconfigRootDir: import.meta.dirname,
+});
+```
+
+#### Options and custom configs
+
+``` js
 export default config(
-  // options
+  // Options
   {
     // Enable recommended rules. (default: true)
     recommendedRules: true,
@@ -45,19 +55,23 @@ export default config(
     // If true, mixes eslint-config-prettier to disable formatting rules. (default: true)
     prettier: true,
   },
-  // custom flat configs
+  // Custom configs
   [
     {
       files: ["/path/to/file.js"],
+      // Configs in `extends` are expanded in the same way as tseslint.config() does.
+      // See https://typescript-eslint.io/packages/typescript-eslint#flat-config-extends
+      extends: [somePlugin.recommended],
       rules: {
         "no-console": "off",
       },
     },
   ],
 );
+);
 ```
 
-### What does `config()` do?
+#### What does `config()` do?
 
 - Set linter options
   - Enable `reportUnusedDisableDirectives`
@@ -75,7 +89,7 @@ export default config(
 
 See [the source code](https://github.com/susisu/eslint-config/blob/master/src/config/index.ts) for more details.
 
-## eslintrc (deprecated)
+### eslintrc (deprecated)
 
 There are three preset configurations for JavaScript and TypeScript:
 
