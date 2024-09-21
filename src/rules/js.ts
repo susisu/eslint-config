@@ -210,7 +210,7 @@ const suggestions: Rules = {
   "prefer-template": off,
   radix: error,
   "require-await": warn,
-  "require-unicode-regexp": off,
+  "require-unicode-regexp": warn,
   "require-yield": error,
   "sort-imports": off,
   "sort-keys": off,
