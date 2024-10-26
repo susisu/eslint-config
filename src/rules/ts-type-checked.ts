@@ -50,7 +50,10 @@ const possibleProblems: Rules = {
 
 const suggestions: Rules = {
   "@typescript-eslint/consistent-return": error,
-  "@typescript-eslint/consistent-type-exports": off,
+  "@typescript-eslint/consistent-type-exports": [
+    error,
+    { fixMixedExportsWithInlineTypeSpecifier: false },
+  ],
   "@typescript-eslint/dot-notation": off,
   "@typescript-eslint/no-base-to-string": warn,
   "@typescript-eslint/no-duplicate-type-constituents": off,
