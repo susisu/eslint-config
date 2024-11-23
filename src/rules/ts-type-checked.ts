@@ -41,6 +41,7 @@ const possibleProblems: Rules = {
     { allowThrowingAny: false, allowThrowingUnknown: false },
   ],
   "@typescript-eslint/prefer-reduce-type-parameter": error,
+  "@typescript-eslint/related-getter-setter-pairs": error,
   "@typescript-eslint/require-array-sort-compare": off,
   "@typescript-eslint/restrict-plus-operands": warn,
   "@typescript-eslint/restrict-template-expressions": [warn, { allowNumber: true }],
