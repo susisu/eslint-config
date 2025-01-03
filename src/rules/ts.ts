@@ -10,6 +10,7 @@ const overrides: Rules = {
   "class-methods-use-this": off,
   "default-param-last": off,
   "init-declarations": off,
+  "max-params": off,
   "no-array-constructor": off,
   "no-dupe-class-members": off,
   "no-empty-function": off,
@@ -95,6 +96,7 @@ const suggestions: Rules = {
   ],
   "@typescript-eslint/default-param-last": error,
   "@typescript-eslint/init-declarations": off,
+  "@typescript-eslint/max-params": off,
   "@typescript-eslint/member-delimiter-style": off,
   "@typescript-eslint/member-ordering": off,
   // disabled to allow @typescript-eslint/unbound-method rule to work
