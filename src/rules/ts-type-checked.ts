@@ -40,6 +40,7 @@ const possibleProblems: Rules = {
   "@typescript-eslint/no-unsafe-unary-minus": error,
   "@typescript-eslint/only-throw-error": [
     error,
+    // the same option as @typescript-eslint/prefer-promise-reject-errors
     { allowThrowingAny: false, allowThrowingUnknown: false },
   ],
   "@typescript-eslint/prefer-reduce-type-parameter": error,
@@ -78,7 +79,11 @@ const suggestions: Rules = {
   "@typescript-eslint/prefer-find": error,
   "@typescript-eslint/prefer-includes": warn,
   "@typescript-eslint/prefer-nullish-coalescing": off,
-  "@typescript-eslint/prefer-promise-reject-errors": [error, { allowEmptyReject: false }],
+  "@typescript-eslint/prefer-promise-reject-errors": [
+    error,
+    // the same option as @typescript-eslint/only-throw-error
+    { allowEmptyReject: false, allowThrowingAny: false, allowThrowingUnknown: false },
+  ],
   // to be tested
   "@typescript-eslint/prefer-readonly": off,
   "@typescript-eslint/prefer-readonly-parameter-types": off,
