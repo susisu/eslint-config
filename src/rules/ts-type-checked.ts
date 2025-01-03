@@ -97,7 +97,12 @@ const suggestions: Rules = {
   // "switch-exhaustiveness-check" is enabled for additional information.
   "@typescript-eslint/switch-exhaustiveness-check": [
     warn,
-    { allowDefaultCaseForExhaustiveSwitch: true, requireDefaultForNonUnion: true },
+    {
+      allowDefaultCaseForExhaustiveSwitch: true,
+      requireDefaultForNonUnion: true,
+      // disabled
+      defaultCaseCommentPattern: ".^",
+    },
   ],
   "@typescript-eslint/use-unknown-in-catch-callback-variable": warn,
 };
