@@ -87,7 +87,11 @@ const suggestions: Rules = {
   "@typescript-eslint/consistent-indexed-object-style": off,
   "@typescript-eslint/consistent-type-assertions": [
     error,
-    { assertionStyle: "as", objectLiteralTypeAssertions: "allow-as-parameter" },
+    {
+      assertionStyle: "as",
+      objectLiteralTypeAssertions: "allow-as-parameter",
+      arrayLiteralTypeAssertions: "allow-as-parameter",
+    },
   ],
   "@typescript-eslint/consistent-type-definitions": off,
   "@typescript-eslint/consistent-type-imports": [
