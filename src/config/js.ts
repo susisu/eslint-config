@@ -8,7 +8,8 @@ export function config(): Linter.Config {
   return {
     name: "@susisu/eslint-config/js",
     linterOptions: {
-      reportUnusedDisableDirectives: true,
+      reportUnusedDisableDirectives: "warn",
+      reportUnusedInlineConfigs: "warn",
     },
     plugins: {
       "@stylistic": stylisticPlugin,

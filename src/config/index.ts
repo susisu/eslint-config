@@ -61,7 +61,8 @@ export function config(
     {
       name: "@susisu/eslint-config/linter-settings",
       linterOptions: {
-        reportUnusedDisableDirectives: true,
+        reportUnusedDisableDirectives: "warn",
+        reportUnusedInlineConfigs: "warn",
       },
       plugins: {
         // eslint-disable-next-line @susisu/safe-typescript/no-type-assertion

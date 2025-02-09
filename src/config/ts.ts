@@ -12,7 +12,8 @@ export function config(): Linter.Config {
   return {
     name: "@susisu/eslint-config/ts",
     linterOptions: {
-      reportUnusedDisableDirectives: true,
+      reportUnusedDisableDirectives: "warn",
+      reportUnusedInlineConfigs: "warn",
     },
     languageOptions: {
       parser: tsEslintParser,
