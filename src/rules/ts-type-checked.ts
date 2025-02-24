@@ -69,7 +69,10 @@ const suggestions: Rules = {
     error,
     { allowComparingNullableBooleansToTrue: true, allowComparingNullableBooleansToFalse: true },
   ],
-  "@typescript-eslint/no-unnecessary-condition": [warn, { allowConstantLoopConditions: true }],
+  "@typescript-eslint/no-unnecessary-condition": [
+    warn,
+    { allowConstantLoopConditions: "only-allowed-literals" },
+  ],
   "@typescript-eslint/no-unnecessary-qualifier": off,
   "@typescript-eslint/no-unnecessary-type-arguments": off,
   // allow `as const` to disallow widening
