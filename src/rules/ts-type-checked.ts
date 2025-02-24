@@ -26,8 +26,7 @@ const possibleProblems: Rules = {
     warn,
     { checksConditionals: true, checksVoidReturn: true },
   ],
-  // waiting for https://github.com/typescript-eslint/typescript-eslint/issues/10745 to be resolved
-  "@typescript-eslint/no-misused-spread": off,
+  "@typescript-eslint/no-misused-spread": warn,
   "@typescript-eslint/no-mixed-enums": warn,
   "@typescript-eslint/no-unnecessary-template-expression": error,
   // to be tested
