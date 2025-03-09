@@ -40,7 +40,10 @@ export type ConfigOptions = Readonly<
   }>
 >;
 
-export function config(options?: ConfigOptions, configs?: ConfigWithExtendsArray): Linter.Config[] {
+export function config(
+  options?: ConfigOptions,
+  ...configs: ConfigWithExtendsArray
+): Linter.Config[] {
   const recommendedRules = options?.recommendedRules ?? true;
   const jsSourceType = options?.jsSourceType ?? "module";
   const tsProjectService = options?.tsProjectService ?? true;
@@ -122,7 +125,7 @@ export function config(options?: ConfigOptions, configs?: ConfigWithExtendsArray
       ]
     : [],
     // custom configs
-    configs ?? [],
+    configs,
     // disable formatting rules
     prettier ?
       [
