@@ -15,10 +15,6 @@ import {
   stylistic as stylisticRules,
 } from "../rules/index.js";
 
-import { config as jsConfig } from "./js.js";
-import { config as tsConfig } from "./ts.js";
-import { config as tsTypeCheckedConfig } from "./ts-type-checked.js";
-
 import type { ConfigWithExtends } from "../utils/index.js";
 import { expand } from "../utils/index.js";
 
@@ -142,7 +138,3 @@ export function config(
     : []),
   ];
 }
-
-config.js = jsConfig;
-config.ts = tsConfig;
-config.tsTypeChecked = tsTypeCheckedConfig;
