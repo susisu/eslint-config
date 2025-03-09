@@ -18,23 +18,19 @@
         "types": "./lib/index.d.cts",
         "default": "./lib/index.cjs"
       }
-    },
-    "./preset/js": "./preset/js.cjs",
-    "./preset/ts-without-types": "./preset/ts-without-types.cjs",
-    "./preset/ts": "./preset/ts.cjs"
+    }
   },
   "files": [
     "lib",
-    "preset",
     "src",
     "!src/**/*.spec.ts",
     "!src/**/__tests__"
   ],
   "scripts": {
-    "format": "prettier --write '*.js' src preset",
-    "format:check": "prettier --check '*.js' src preset",
-    "lint": "eslint --fix '*.js' src preset",
-    "lint:check": "eslint '*.js' src preset",
+    "format": "prettier --write '*.js' src",
+    "format:check": "prettier --check '*.js' src",
+    "lint": "eslint --fix '*.js' src",
+    "lint:check": "eslint '*.js' src",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "vitest run --coverage",
     "test:dev": "vitest dev --coverage.enabled --coverage.reporter=text",
@@ -43,8 +39,7 @@
     "configtest": "run-s -c 'configtest:*'",
     "configtest:js": "./configtest/js/run.sh",
     "configtest:ts": "./configtest/ts/run.sh",
-    "configtest:ts-type-checked": "./configtest/ts-type-checked/run.sh",
-    "configtest:eslintrc": "./configtest/eslintrc/run.sh"
+    "configtest:ts-type-checked": "./configtest/ts-type-checked/run.sh"
   },
   "dependencies": {
     "@stylistic/eslint-plugin": "^3.1.0",
