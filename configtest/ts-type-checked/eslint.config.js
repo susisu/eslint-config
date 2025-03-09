@@ -1,7 +1,10 @@
 import { config } from "@susisu/eslint-config";
 import globals from "globals";
 
-export default config({}, [
+export default config(
+  {
+    tsconfigRootDir: import.meta.dirname,
+  },
   {
     languageOptions: {
       globals: {
@@ -10,4 +13,4 @@ export default config({}, [
       },
     },
   },
-]);
+);

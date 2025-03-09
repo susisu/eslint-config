@@ -1,5 +1,5 @@
-import type { Rules } from "./common";
-import { levels, removeDisabledRules } from "./common";
+import type { Rules } from "./common.js";
+import { levels, removeDisabledRules } from "./common.js";
 
 const { error } = levels;
 

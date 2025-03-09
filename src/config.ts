@@ -1,4 +1,6 @@
 import type { ESLint, Linter } from "eslint";
+import type { ConfigWithExtendsArray } from "@eslint/config-helpers";
+import { defineConfig } from "@eslint/config-helpers";
 
 import tsEslintParser from "@typescript-eslint/parser";
 
@@ -13,14 +15,7 @@ import {
   ts as tsRules,
   tsTypeChecked as tsTypeCheckedRules,
   stylistic as stylisticRules,
-} from "../rules";
-
-import { config as jsConfig } from "./js";
-import { config as tsConfig } from "./ts";
-import { config as tsTypeCheckedConfig } from "./ts-type-checked";
-
-import type { ConfigWithExtends } from "../utils";
-import { expand } from "../utils";
+} from "./rules.js";
 
 export type ConfigOptions = Readonly<
   Partial<{
@@ -47,7 +42,7 @@ export type ConfigOptions = Readonly<
 
 export function config(
   options?: ConfigOptions,
-  configs?: readonly ConfigWithExtends[],
+  ...configs: ConfigWithExtendsArray
 ): Linter.Config[] {
   const recommendedRules = options?.recommendedRules ?? true;
   const jsSourceType = options?.jsSourceType ?? "module";
@@ -56,45 +51,47 @@ export function config(
   const tsconfigRootDir = options?.tsconfigRootDir ?? undefined;
   const prettier = options?.prettier ?? true;
 
-  return [
-    // linter settings
+  return defineConfig(
     {
-      name: "@susisu/eslint-config/linter-settings",
+      name: "@susisu/eslint-config/linter-options",
       linterOptions: {
         reportUnusedDisableDirectives: "warn",
         reportUnusedInlineConfigs: "warn",
       },
+    },
+    {
+      name: "@susisu/eslint-config/plugins",
       plugins: {
         // eslint-disable-next-line @susisu/safe-typescript/no-type-assertion
         "@typescript-eslint": tsEslintPlugin as unknown as ESLint.Plugin,
         "@susisu/safe-typescript": safeTsPlugin,
-        "@stylistic": stylisticPlugin,
+        // eslint-disable-next-line @susisu/safe-typescript/no-type-assertion
+        "@stylistic": stylisticPlugin as ESLint.Plugin,
       },
     },
-    // language settings
     {
-      name: "@susisu/eslint-config/language-settings/js",
+      name: "@susisu/eslint-config/language-options/js",
       files: ["**/*.js"],
       languageOptions: {
         sourceType: jsSourceType,
       },
     },
     {
-      name: "@susisu/eslint-config/language-settings/cjs",
+      name: "@susisu/eslint-config/language-options/cjs",
       files: ["**/*.cjs"],
       languageOptions: {
         sourceType: "commonjs",
       },
     },
     {
-      name: "@susisu/eslint-config/language-settings/mjs",
+      name: "@susisu/eslint-config/language-options/mjs",
       files: ["**/*.mjs"],
       languageOptions: {
         sourceType: "module",
       },
     },
     {
-      name: "@susisu/eslint-config/language-settings/ts",
+      name: "@susisu/eslint-config/language-options/ts",
       files: ["**/*.{ts,tsx,cts,ctsx,mts,mtsx}"],
       languageOptions: {
         sourceType: "module",
@@ -107,11 +104,10 @@ export function config(
         },
       },
     },
-    // rule settings
-    ...(recommendedRules ?
+    recommendedRules ?
       [
         {
-          name: "@susisu/eslint-config/rule-settings/js",
+          name: "@susisu/eslint-config/rules/js",
           files: ["**/*.{js,cjs,mjs}"],
           rules: {
             ...jsRules,
@@ -119,7 +115,7 @@ export function config(
           },
         },
         {
-          name: "@susisu/eslint-config/rule-settings/ts",
+          name: "@susisu/eslint-config/rules/ts",
           files: ["**/*.{ts,tsx,cts,ctsx,mts,mtsx}"],
           rules: {
             ...(tsProjectService || tsProject ? tsTypeCheckedRules : tsRules),
@@ -127,21 +123,17 @@ export function config(
           },
         },
       ]
-    : []),
+    : [],
     // custom configs
-    ...expand(configs ?? []),
+    configs,
     // disable formatting rules
-    ...(prettier ?
+    prettier ?
       [
         {
           name: "@susisu/eslint-config/prettier",
           rules: prettierConfig.rules,
         },
       ]
-    : []),
-  ];
+    : [],
+  );
 }
-
-config.js = jsConfig;
-config.ts = tsConfig;
-config.tsTypeChecked = tsTypeCheckedConfig;

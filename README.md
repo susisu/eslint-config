@@ -54,11 +54,11 @@ export default config(
     prettier: true,
   },
   // Custom configs
+  // You can use the same feature as `defineConfig()`, like `extends`.
+  // See https://eslint.org/blog/2025/03/flat-config-extends-define-config-global-ignores/
   [
     {
       files: ["/path/to/file.js"],
-      // Configs in `extends` are expanded in the same way as tseslint.config() does.
-      // See https://typescript-eslint.io/packages/typescript-eslint#flat-config-extends
       extends: [somePlugin.recommended],
       rules: {
         "no-console": "off",
@@ -73,6 +73,7 @@ export default config(
 
 - Set linter options
   - Enable `reportUnusedDisableDirectives`
+  - Enable `reportUnusedInlineConfigs`
 - Install plugins
   - [typescript-eslint](https://typescript-eslint.io) (rule prefix: `@typescript-eslint/*`)
   - [ESLint Stylistic](https://eslint.style) (rule prefix: `@stylistic/*`)
@@ -83,7 +84,7 @@ export default config(
   - Enable typescript-eslint parser and typed linting for TS files
 - Enable recommended rules
 - Apply custom configs
-- Disable rules that can conflict with Prettier
+- Disable rules conflicting with Prettier
 
 See [the source code](https://github.com/susisu/eslint-config/blob/master/src/config/index.ts) for more details.
 

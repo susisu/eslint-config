@@ -1,6 +1,6 @@
-import type { Rules } from "./common";
-import { levels, removeDisabledRules } from "./common";
-import { rules as jsRules } from "./js";
+import type { Rules } from "./common.js";
+import { levels, removeDisabledRules } from "./common.js";
+import { rules as jsRules } from "./js.js";
 
 const { off, warn, error } = levels;
 
