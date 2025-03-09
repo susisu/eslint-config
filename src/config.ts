@@ -15,7 +15,7 @@ import {
   ts as tsRules,
   tsTypeChecked as tsTypeCheckedRules,
   stylistic as stylisticRules,
-} from "../rules/index.js";
+} from "./rules.js";
 
 export type ConfigOptions = Readonly<
   Partial<{

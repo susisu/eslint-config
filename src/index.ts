@@ -1,5 +1,5 @@
-import type { ConfigOptions } from "./config/index.js";
-import { config } from "./config/index.js";
+import type { ConfigOptions } from "./config.js";
+import { config } from "./config.js";
 
 export type { ConfigOptions };
 export { config };
