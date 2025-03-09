@@ -54,11 +54,11 @@ export default config(
     prettier: true,
   },
   // Custom configs
+  // You can use the same feature as `defineConfig()`, like `extends`.
+  // See https://eslint.org/blog/2025/03/flat-config-extends-define-config-global-ignores/
   [
     {
       files: ["/path/to/file.js"],
-      // Configs in `extends` are expanded in the same way as tseslint.config() does.
-      // See https://typescript-eslint.io/packages/typescript-eslint#flat-config-extends
       extends: [somePlugin.recommended],
       rules: {
         "no-console": "off",
