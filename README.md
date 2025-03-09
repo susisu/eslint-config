@@ -73,6 +73,7 @@ export default config(
 
 - Set linter options
   - Enable `reportUnusedDisableDirectives`
+  - Enable `reportUnusedInlineConfigs`
 - Install plugins
   - [typescript-eslint](https://typescript-eslint.io) (rule prefix: `@typescript-eslint/*`)
   - [ESLint Stylistic](https://eslint.style) (rule prefix: `@stylistic/*`)
@@ -83,7 +84,7 @@ export default config(
   - Enable typescript-eslint parser and typed linting for TS files
 - Enable recommended rules
 - Apply custom configs
-- Disable rules that can conflict with Prettier
+- Disable rules conflicting with Prettier
 
 See [the source code](https://github.com/susisu/eslint-config/blob/master/src/config/index.ts) for more details.
 
