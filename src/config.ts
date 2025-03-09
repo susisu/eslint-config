@@ -48,7 +48,7 @@ export function config(options?: ConfigOptions, configs?: ConfigWithExtendsArray
   const tsconfigRootDir = options?.tsconfigRootDir ?? undefined;
   const prettier = options?.prettier ?? true;
 
-  return defineConfig([
+  return defineConfig(
     // linter settings
     {
       name: "@susisu/eslint-config/linter-settings",
@@ -132,5 +132,5 @@ export function config(options?: ConfigOptions, configs?: ConfigWithExtendsArray
         },
       ]
     : [],
-  ]);
+  );
 }
