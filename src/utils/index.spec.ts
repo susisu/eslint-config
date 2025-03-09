@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
-import type { ConfigWithExtends } from ".";
-import { map, expand } from ".";
+import type { ConfigWithExtends } from "./index.js";
+import { map, expand } from "./index.js";
 import type { Linter } from "eslint";
 
 describe("map", () => {

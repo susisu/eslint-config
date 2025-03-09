@@ -13,14 +13,14 @@ import {
   ts as tsRules,
   tsTypeChecked as tsTypeCheckedRules,
   stylistic as stylisticRules,
-} from "../rules";
+} from "../rules/index.js";
 
-import { config as jsConfig } from "./js";
-import { config as tsConfig } from "./ts";
-import { config as tsTypeCheckedConfig } from "./ts-type-checked";
+import { config as jsConfig } from "./js.js";
+import { config as tsConfig } from "./ts.js";
+import { config as tsTypeCheckedConfig } from "./ts-type-checked.js";
 
-import type { ConfigWithExtends } from "../utils";
-import { expand } from "../utils";
+import type { ConfigWithExtends } from "../utils/index.js";
+import { expand } from "../utils/index.js";
 
 export type ConfigOptions = Readonly<
   Partial<{
@@ -68,7 +68,8 @@ export function config(
         // eslint-disable-next-line @susisu/safe-typescript/no-type-assertion
         "@typescript-eslint": tsEslintPlugin as unknown as ESLint.Plugin,
         "@susisu/safe-typescript": safeTsPlugin,
-        "@stylistic": stylisticPlugin,
+        // eslint-disable-next-line @susisu/safe-typescript/no-type-assertion
+        "@stylistic": stylisticPlugin as ESLint.Plugin,
       },
     },
     // language settings

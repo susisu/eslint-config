@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { levels, intLevels, removeDisabledRules } from "./common";
+import { levels, intLevels, removeDisabledRules } from "./common.js";
 
 describe("removeDisabledRules", () => {
   it("removes all disabled rules", () => {
