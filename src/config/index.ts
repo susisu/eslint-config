@@ -1,4 +1,6 @@
 import type { ESLint, Linter } from "eslint";
+import type { ConfigWithExtendsArray } from "@eslint/config-helpers";
+import { defineConfig } from "@eslint/config-helpers";
 
 import tsEslintParser from "@typescript-eslint/parser";
 
@@ -14,9 +16,6 @@ import {
   tsTypeChecked as tsTypeCheckedRules,
   stylistic as stylisticRules,
 } from "../rules/index.js";
-
-import type { ConfigWithExtends } from "../utils/index.js";
-import { expand } from "../utils/index.js";
 
 export type ConfigOptions = Readonly<
   Partial<{
@@ -41,10 +40,7 @@ export type ConfigOptions = Readonly<
   }>
 >;
 
-export function config(
-  options?: ConfigOptions,
-  configs?: readonly ConfigWithExtends[],
-): Linter.Config[] {
+export function config(options?: ConfigOptions, configs?: ConfigWithExtendsArray): Linter.Config[] {
   const recommendedRules = options?.recommendedRules ?? true;
   const jsSourceType = options?.jsSourceType ?? "module";
   const tsProjectService = options?.tsProjectService ?? true;
@@ -52,7 +48,7 @@ export function config(
   const tsconfigRootDir = options?.tsconfigRootDir ?? undefined;
   const prettier = options?.prettier ?? true;
 
-  return [
+  return defineConfig([
     // linter settings
     {
       name: "@susisu/eslint-config/linter-settings",
@@ -105,7 +101,7 @@ export function config(
       },
     },
     // rule settings
-    ...(recommendedRules ?
+    recommendedRules ?
       [
         {
           name: "@susisu/eslint-config/rule-settings/js",
@@ -124,17 +120,17 @@ export function config(
           },
         },
       ]
-    : []),
+    : [],
     // custom configs
-    ...expand(configs ?? []),
+    configs ?? [],
     // disable formatting rules
-    ...(prettier ?
+    prettier ?
       [
         {
           name: "@susisu/eslint-config/prettier",
           rules: prettierConfig.rules,
         },
       ]
-    : []),
-  ];
+    : [],
+  ]);
 }
