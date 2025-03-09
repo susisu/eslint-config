@@ -54,7 +54,7 @@
     "eslint": "^9.19.0"
   },
   "devDependencies": {
-    "@susisu/eslint-config-stable": "npm:@susisu/eslint-config@^0.0.94",
+    "@susisu/eslint-config-stable": "npm:@susisu/eslint-config@^0.0.96",
     "@vitest/coverage-v8": "^3.0.8",
     "eslint": "^9.22.0",
     "globals": "^16.0.0",
