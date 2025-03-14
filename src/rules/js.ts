@@ -130,7 +130,7 @@ const suggestions: Rules = {
   "no-extra-boolean-cast": [error, { enforceForInnerExpressions: true }],
   "no-extra-label": error,
   "no-global-assign": error,
-  // `!!` is allowed because it is frequently used
+  // `!!` is allowed because it's commpnly used and the purpose is clear
   "no-implicit-coercion": [error, { allow: ["!!"] }],
   "no-implicit-globals": [error, { lexicalBindings: true }],
   "no-implied-eval": error,
@@ -175,7 +175,7 @@ const suggestions: Rules = {
   "no-undefined": off,
   "no-underscore-dangle": off,
   "no-unneeded-ternary": error,
-  // JSXs are mostly recognized as pure expressions
+  // JSXs are commonly recognized as pure expressions
   "no-unused-expressions": [error, { enforceForJSX: true }],
   "no-unused-labels": error,
   "no-useless-call": error,

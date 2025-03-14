@@ -130,7 +130,7 @@ const suggestions: Rules = {
     {
       // classProperty and classMethod are excluded because they will not be affected by external systems or packages
       selector: ["objectLiteralProperty", "typeProperty", "objectLiteralMethod", "typeMethod"],
-      // allow any common format because property and method names could be defined by external systems or packages
+      // allow all the common formats because property and method names could be enforced by external systems or packages
       format: ["camelCase", "PascalCase", "snake_case", "UPPER_CASE"],
       leadingUnderscore: "allow",
       trailingUnderscore: "allow",
@@ -142,7 +142,7 @@ const suggestions: Rules = {
     },
     {
       selector: "import",
-      // allow any common format because import names could be defined by external packages
+      // allow all the common formats because import names could be enforced by external packages
       format: ["camelCase", "PascalCase", "snake_case", "UPPER_CASE"],
       leadingUnderscore: "allow",
       trailingUnderscore: "allow",
