@@ -200,8 +200,7 @@ const suggestions: Rules = {
   "prefer-exponentiation-operator": error,
   "prefer-named-capture-group": off,
   "prefer-numeric-literals": error,
-  // disabled because it's too early to require ES2022
-  "prefer-object-has-own": off,
+  "prefer-object-has-own": error,
   "prefer-object-spread": error,
   "prefer-promise-reject-errors": [error, { allowEmptyReject: false }],
   "prefer-regex-literals": error,
