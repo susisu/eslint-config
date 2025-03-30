@@ -92,7 +92,7 @@ export function config(
     },
     {
       name: "@susisu/eslint-config/language-options/ts",
-      files: ["**/*.{ts,tsx,cts,ctsx,mts,mtsx}"],
+      files: ["**/*.{ts,tsx,cts,mts}"],
       languageOptions: {
         sourceType: "module",
         parser: tsEslintParser,
@@ -116,7 +116,7 @@ export function config(
         },
         {
           name: "@susisu/eslint-config/rules/ts",
-          files: ["**/*.{ts,tsx,cts,ctsx,mts,mtsx}"],
+          files: ["**/*.{ts,tsx,cts,mts}"],
           rules: {
             ...(tsProjectService || tsProject ? tsTypeCheckedRules : tsRules),
             ...stylisticRules,

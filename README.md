@@ -79,7 +79,7 @@ export default config(
   - [ESLint Stylistic](https://eslint.style) (rule prefix: `@stylistic/*`)
   - [eslint-plugin-safe-typescript](https://github.com/susisu/eslint-plugin-safe-typescript) (rule prefix: `@susisu/safe-typescript/*`)
 - Set language options for JS and TS files
-  - Set `sourceType: "module"` for .js, .mjs, .ts, .tsx, .cts, .ctsx, .mts, .mtsx
+  - Set `sourceType: "module"` for .js, .mjs, .ts, .tsx, .cts, .mts
   - Set `sourceType: "commonjs"` for .cjs
   - Enable typescript-eslint parser and typed linting for TS files
 - Enable recommended rules
