@@ -94,7 +94,7 @@ const suggestions: Rules = {
   "@typescript-eslint/prefer-regexp-exec": warn,
   "@typescript-eslint/prefer-return-this-type": off,
   "@typescript-eslint/prefer-string-starts-ends-with": error,
-  "@typescript-eslint/promise-function-async": off,
+  "@typescript-eslint/promise-function-async": warn,
   "@typescript-eslint/require-await": off,
   "@typescript-eslint/strict-boolean-expressions": off,
   // "default-case" enforces the requirement for a `default` case.
