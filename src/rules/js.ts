@@ -208,7 +208,7 @@ const suggestions: Rules = {
   "prefer-spread": error,
   "prefer-template": off,
   radix: error,
-  "require-await": off,
+  "require-await": warn,
   "require-unicode-regexp": warn,
   "require-yield": off,
   "sort-imports": off,

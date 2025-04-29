@@ -95,7 +95,7 @@ const suggestions: Rules = {
   "@typescript-eslint/prefer-return-this-type": off,
   "@typescript-eslint/prefer-string-starts-ends-with": error,
   "@typescript-eslint/promise-function-async": warn,
-  "@typescript-eslint/require-await": off,
+  "@typescript-eslint/require-await": warn,
   "@typescript-eslint/strict-boolean-expressions": off,
   // "default-case" enforces the requirement for a `default` case.
   // "switch-exhaustiveness-check" is enabled for additional information.
