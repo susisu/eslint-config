@@ -44,7 +44,7 @@
   "dependencies": {
     "@eslint/config-helpers": "^0.2.1",
     "@stylistic/eslint-plugin": "^4.2.0",
-    "@susisu/eslint-plugin-safe-typescript": "^0.9.3",
+    "@susisu/eslint-plugin-safe-typescript": "^0.9.4",
     "@typescript-eslint/eslint-plugin": "^8.31.1",
     "@typescript-eslint/parser": "^8.31.1",
     "eslint-config-prettier": "^10.1.2"
