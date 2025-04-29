@@ -47,6 +47,7 @@ const possibleProblems: Rules = {
     },
   ],
   "@typescript-eslint/no-confusing-non-null-assertion": off,
+  // NOTE: to be replaced https://github.com/typescript-eslint/typescript-eslint/issues/11014
   "@typescript-eslint/no-dupe-class-members": error,
   "@typescript-eslint/no-duplicate-enum-values": error,
   "@typescript-eslint/no-extra-non-null-assertion": error,
@@ -73,6 +74,7 @@ const possibleProblems: Rules = {
     warn,
     { functions: false, typedefs: false, allowNamedExports: true },
   ],
+  // NOTE: to be replaced https://github.com/typescript-eslint/typescript-eslint/issues/11014
   "@typescript-eslint/no-useless-constructor": error,
   "@typescript-eslint/no-wrapper-object-types": error,
   "@typescript-eslint/parameter-properties": off,
@@ -82,6 +84,7 @@ const suggestions: Rules = {
   "@typescript-eslint/adjacent-overload-signatures": error,
   "@typescript-eslint/array-type": [error, { default: "array-simple", readonly: "array-simple" }],
   "@typescript-eslint/ban-tslint-comment": off,
+  // NOTE: to be replaced https://github.com/typescript-eslint/typescript-eslint/issues/11014
   "@typescript-eslint/class-methods-use-this": off,
   "@typescript-eslint/consistent-generic-constructors": off,
   "@typescript-eslint/consistent-indexed-object-style": off,
@@ -98,7 +101,9 @@ const suggestions: Rules = {
     error,
     { prefer: "type-imports", fixStyle: "separate-type-imports", disallowTypeAnnotations: true },
   ],
+  // NOTE: to be replaced https://github.com/typescript-eslint/typescript-eslint/issues/11014
   "@typescript-eslint/default-param-last": error,
+  // NOTE: to be replaced https://github.com/typescript-eslint/typescript-eslint/issues/11014
   "@typescript-eslint/init-declarations": off,
   "@typescript-eslint/max-params": off,
   "@typescript-eslint/member-delimiter-style": off,
@@ -154,8 +159,10 @@ const suggestions: Rules = {
       trailingUnderscore: "allow",
     },
   ],
+  // NOTE: to be replaced https://github.com/typescript-eslint/typescript-eslint/issues/11014
   "@typescript-eslint/no-array-constructor": error,
   "@typescript-eslint/no-dynamic-delete": off,
+  // NOTE: to be replaced https://github.com/typescript-eslint/typescript-eslint/issues/11014
   "@typescript-eslint/no-empty-function": off,
   "@typescript-eslint/no-empty-object-type": off,
   "@typescript-eslint/no-explicit-any": warn,
@@ -164,7 +171,9 @@ const suggestions: Rules = {
     { allowConstructorOnly: true, allowEmpty: true, allowWithDecorator: true },
   ],
   "@typescript-eslint/no-inferrable-types": off,
+  // NOTE: to be replaced https://github.com/typescript-eslint/typescript-eslint/issues/11014
   "@typescript-eslint/no-invalid-this": [warn, { capIsConstructor: false }],
+  // NOTE: to be replaced https://github.com/typescript-eslint/typescript-eslint/issues/11014
   "@typescript-eslint/no-loop-func": error,
   "@typescript-eslint/no-magic-numbers": off,
   "@typescript-eslint/no-namespace": [
@@ -178,6 +187,7 @@ const suggestions: Rules = {
   "@typescript-eslint/no-this-alias": [error, { allowDestructuring: true }],
   "@typescript-eslint/no-unnecessary-parameter-property-assignment": error,
   "@typescript-eslint/no-unnecessary-type-constraint": off,
+  // NOTE: to be replaced https://github.com/typescript-eslint/typescript-eslint/issues/11014
   "@typescript-eslint/no-unused-expressions": [error, { enforceForJSX: true }],
   "@typescript-eslint/no-useless-empty-export": warn,
   "@typescript-eslint/prefer-as-const": error,
