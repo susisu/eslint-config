@@ -56,16 +56,13 @@ export default config(
   // Custom configs
   // You can use the same feature as `defineConfig()`, like `extends`.
   // See https://eslint.org/blog/2025/03/flat-config-extends-define-config-global-ignores/
-  [
-    {
-      files: ["/path/to/file.js"],
-      extends: [somePlugin.recommended],
-      rules: {
-        "no-console": "off",
-      },
+  {
+    files: ["/path/to/file.js"],
+    extends: [somePlugin.recommended],
+    rules: {
+      "no-console": "off",
     },
-  ],
-);
+  },
 );
 ```
 
