@@ -41,8 +41,8 @@ const possibleProblems: Rules = {
   "@typescript-eslint/no-unsafe-unary-minus": error,
   "@typescript-eslint/only-throw-error": [
     error,
-    // the same option as @typescript-eslint/prefer-promise-reject-errors
-    { allowThrowingAny: false, allowThrowingUnknown: false },
+    // see also the options for @typescript-eslint/prefer-promise-reject-errors
+    { allowRethrowing: true, allowThrowingAny: false, allowThrowingUnknown: false },
   ],
   "@typescript-eslint/prefer-reduce-type-parameter": error,
   "@typescript-eslint/related-getter-setter-pairs": error,
@@ -86,7 +86,7 @@ const suggestions: Rules = {
   "@typescript-eslint/prefer-nullish-coalescing": off,
   "@typescript-eslint/prefer-promise-reject-errors": [
     error,
-    // the same option as @typescript-eslint/only-throw-error
+    // see also the options for @typescript-eslint/only-throw-error
     { allowEmptyReject: false, allowThrowingAny: false, allowThrowingUnknown: false },
   ],
   // to be tested
