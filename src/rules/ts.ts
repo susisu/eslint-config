@@ -70,6 +70,7 @@ const possibleProblems: Rules = {
       caughtErrorsIgnorePattern: "^_",
     },
   ],
+  // NOTE: to be replaced https://github.com/typescript-eslint/typescript-eslint/issues/11014
   "@typescript-eslint/no-use-before-define": [
     warn,
     { functions: false, typedefs: false, allowNamedExports: true },
@@ -105,6 +106,7 @@ const suggestions: Rules = {
   "@typescript-eslint/default-param-last": error,
   // NOTE: to be replaced https://github.com/typescript-eslint/typescript-eslint/issues/11014
   "@typescript-eslint/init-declarations": off,
+  // NOTE: to be replaced https://github.com/typescript-eslint/typescript-eslint/issues/11014
   "@typescript-eslint/max-params": off,
   "@typescript-eslint/member-delimiter-style": off,
   "@typescript-eslint/member-ordering": off,
@@ -175,6 +177,7 @@ const suggestions: Rules = {
   "@typescript-eslint/no-invalid-this": [warn, { capIsConstructor: false }],
   // NOTE: to be replaced https://github.com/typescript-eslint/typescript-eslint/issues/11014
   "@typescript-eslint/no-loop-func": error,
+  // NOTE: to be replaced https://github.com/typescript-eslint/typescript-eslint/issues/11014
   "@typescript-eslint/no-magic-numbers": off,
   "@typescript-eslint/no-namespace": [
     error,
@@ -183,6 +186,7 @@ const suggestions: Rules = {
   "@typescript-eslint/no-redeclare": error,
   "@typescript-eslint/no-restricted-imports": off,
   "@typescript-eslint/no-restricted-types": off,
+  // NOTE: to be replaced https://github.com/typescript-eslint/typescript-eslint/issues/11014
   "@typescript-eslint/no-shadow": off,
   "@typescript-eslint/no-this-alias": [error, { allowDestructuring: true }],
   "@typescript-eslint/no-unnecessary-parameter-property-assignment": error,
