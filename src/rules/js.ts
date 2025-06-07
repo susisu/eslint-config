@@ -168,7 +168,7 @@ const suggestions: Rules = {
   "no-script-url": off,
   "no-sequences": [error, { allowInParentheses: false }],
   "no-shadow": off,
-  "no-shadow-restricted-names": error,
+  "no-shadow-restricted-names": [error, { reportGlobalThis: true }],
   "no-ternary": off,
   "no-throw-literal": error,
   "no-undef-init": off,
