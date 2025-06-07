@@ -50,6 +50,7 @@ const possibleProblems: Rules = {
   "no-sparse-arrays": error,
   "no-template-curly-in-string": warn,
   "no-this-before-super": error,
+  "no-unassigned-vars": error,
   "no-undef": error,
   "no-unexpected-multiline": error,
   "no-unmodified-loop-condition": warn,
