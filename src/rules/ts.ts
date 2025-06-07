@@ -216,7 +216,7 @@ const suggestions: Rules = {
 const layoutAndFormatting: Rules = {};
 
 const safeTypeScript: Rules = {
-  "@susisu/safe-typescript/no-object-assign": warn,
+  "@susisu/safe-typescript/no-object-assign-mutation": warn,
   "@susisu/safe-typescript/no-type-assertion": warn,
 };
 
