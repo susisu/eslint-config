@@ -20,8 +20,6 @@ const overrides: Rules = {
   "no-redeclare": off,
   "no-restricted-imports": off,
   "no-shadow": off,
-  // use typecheck
-  "no-unassigned-vars": off,
   "no-unused-expressions": off,
   "no-unused-vars": off,
   "no-use-before-define": off,
