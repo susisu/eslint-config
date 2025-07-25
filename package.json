@@ -42,12 +42,12 @@
     "configtest:ts-type-checked": "./configtest/ts-type-checked/run.sh"
   },
   "dependencies": {
-    "@eslint/config-helpers": "^0.2.2",
-    "@stylistic/eslint-plugin": "^4.4.1",
+    "@eslint/config-helpers": "^0.3.0",
+    "@stylistic/eslint-plugin": "^5.2.2",
     "@susisu/eslint-plugin-safe-typescript": "^0.10.0",
-    "@typescript-eslint/eslint-plugin": "^8.33.1",
-    "@typescript-eslint/parser": "^8.33.1",
-    "eslint-config-prettier": "^10.1.5"
+    "@typescript-eslint/eslint-plugin": "^8.38.0",
+    "@typescript-eslint/parser": "^8.38.0",
+    "eslint-config-prettier": "^10.1.8"
   },
   "peerDependencies": {
     "eslint": "^9.27.0"
@@ -55,13 +55,13 @@
   "devDependencies": {
     "@susisu/eslint-config-stable": "npm:@susisu/eslint-config@^0.0.98",
     "@types/eslint-config-prettier": "^6.11.3",
-    "@vitest/coverage-v8": "^3.2.2",
-    "eslint": "^9.28.0",
-    "globals": "^16.2.0",
+    "@vitest/coverage-v8": "^3.2.4",
+    "eslint": "^9.31.0",
+    "globals": "^16.3.0",
     "npm-run-all2": "^8.0.4",
-    "prettier": "^3.5.3",
+    "prettier": "^3.6.2",
     "rimraf": "^6.0.1",
     "typescript": "~5.8.3",
-    "vitest": "^3.2.2"
+    "vitest": "^3.2.4"
   }
 }
