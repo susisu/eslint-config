@@ -208,6 +208,7 @@ const suggestions: Rules = {
   "prefer-rest-params": error,
   "prefer-spread": error,
   "prefer-template": off,
+  "preserve-caught-error": [warn, { requireCatchParameter: true }],
   radix: error,
   "require-await": warn,
   "require-unicode-regexp": warn,
