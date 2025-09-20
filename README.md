@@ -4,7 +4,7 @@
 
 ## Requirements
 
-- eslint >= 9.27.0 < 10
+- eslint >= 9.35.0 < 10
 
 ## Installation
 
