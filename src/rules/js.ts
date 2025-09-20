@@ -96,7 +96,7 @@ const suggestions: Rules = {
   "func-name-matching": error,
   "func-names": off,
   "func-style": [error, "declaration", { allowArrowFunctions: true }],
-  "grouped-accessor-pairs": [error, "getBeforeSet"],
+  "grouped-accessor-pairs": [error, "getBeforeSet", { enforceForTSTypes: true }],
   "guard-for-in": warn,
   "id-denylist": off,
   "id-length": off,
