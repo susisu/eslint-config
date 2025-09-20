@@ -42,7 +42,6 @@
     "configtest:ts-type-checked": "./configtest/ts-type-checked/run.sh"
   },
   "dependencies": {
-    "@eslint/config-helpers": "^0.3.1",
     "@stylistic/eslint-plugin": "^5.4.0",
     "@susisu/eslint-plugin-safe-typescript": "^0.10.1",
     "@typescript-eslint/eslint-plugin": "^8.44.0",

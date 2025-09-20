@@ -1,6 +1,5 @@
 import type { ESLint, Linter } from "eslint";
-import type { ConfigWithExtendsArray } from "@eslint/config-helpers";
-import { defineConfig } from "@eslint/config-helpers";
+import { defineConfig } from "eslint/config";
 
 import tsEslintParser from "@typescript-eslint/parser";
 
@@ -39,6 +38,8 @@ export type ConfigOptions = Readonly<
     prettier: boolean | undefined;
   }>
 >;
+
+export type ConfigWithExtendsArray = Parameters<typeof defineConfig>;
 
 export function config(
   options?: ConfigOptions,
