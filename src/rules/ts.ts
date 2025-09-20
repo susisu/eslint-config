@@ -160,6 +160,12 @@ const suggestions: Rules = {
       leadingUnderscore: "allow",
       trailingUnderscore: "allow",
     },
+    {
+      selector: "enumMember",
+      format: ["PascalCase"],
+      leadingUnderscore: "allow",
+      trailingUnderscore: "allow",
+    },
   ],
   // NOTE: to be replaced https://github.com/typescript-eslint/typescript-eslint/issues/11014
   "@typescript-eslint/no-array-constructor": error,
