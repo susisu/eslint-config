@@ -20,6 +20,8 @@ const overrides: Rules = {
   "no-redeclare": off,
   "no-restricted-imports": off,
   "no-shadow": off,
+  // checked by TypeScript
+  "no-undef": off,
   "no-unused-expressions": off,
   "no-unused-vars": off,
   "no-use-before-define": off,
