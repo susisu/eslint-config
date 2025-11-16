@@ -49,7 +49,7 @@ const possibleProblems: Rules = {
   "@typescript-eslint/require-array-sort-compare": off,
   "@typescript-eslint/restrict-plus-operands": warn,
   "@typescript-eslint/restrict-template-expressions": [warn, { allowNumber: true }],
-  "@typescript-eslint/return-await": off,
+  "@typescript-eslint/return-await": [error, "always"],
   "@typescript-eslint/unbound-method": error,
 };
 
