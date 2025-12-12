@@ -23,6 +23,7 @@ const overrides: Rules = {
   // checked by TypeScript
   "no-undef": off,
   "no-unused-expressions": off,
+  "no-unused-private-class-members": off,
   "no-unused-vars": off,
   "no-use-before-define": off,
   "no-useless-constructor": off,
@@ -62,6 +63,7 @@ const possibleProblems: Rules = {
   "@typescript-eslint/no-require-imports": error,
   "@typescript-eslint/no-unsafe-declaration-merging": error,
   "@typescript-eslint/no-unsafe-function-type": error,
+  "@typescript-eslint/no-unused-private-class-members": error,
   "@typescript-eslint/no-unused-vars": [
     error,
     {
