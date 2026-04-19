@@ -50,6 +50,7 @@ const possibleProblems: Rules = {
   "@typescript-eslint/restrict-plus-operands": warn,
   "@typescript-eslint/restrict-template-expressions": [warn, { allowNumber: true }],
   "@typescript-eslint/return-await": [error, "always"],
+  "@typescript-eslint/strict-void-return": warn,
   "@typescript-eslint/unbound-method": error,
 };
 
