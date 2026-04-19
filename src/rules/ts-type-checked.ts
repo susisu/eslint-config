@@ -79,6 +79,7 @@ const suggestions: Rules = {
   "@typescript-eslint/no-unnecessary-type-assertion": [error, { typesToIgnore: ["const"] }],
   "@typescript-eslint/no-unnecessary-type-conversion": warn,
   "@typescript-eslint/no-unsafe-enum-comparison": error,
+  "@typescript-eslint/no-useless-default-assignment": error,
   "@typescript-eslint/non-nullable-type-assertion-style": off,
   "@typescript-eslint/prefer-destructuring": off,
   "@typescript-eslint/prefer-find": error,
